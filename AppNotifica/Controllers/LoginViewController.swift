@@ -16,7 +16,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.loginView.backgroundColor = .yellow
+        navigationController?.navigationBar.prefersLargeTitles = true
+        self.title = "Login"
     }
     
 }
