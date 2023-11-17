@@ -17,6 +17,10 @@
 		308121FF2AFBBB680069FCFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308121FE2AFBBB680069FCFC /* SceneDelegate.swift */; };
 		308122062AFBBB6B0069FCFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 308122052AFBBB6B0069FCFC /* Assets.xcassets */; };
 		308122112AFBCA8C0069FCFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 308122102AFBCA8C0069FCFC /* LaunchScreen.storyboard */; };
+		309455992B07A5A0000A3BA8 /* ImageViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309455982B07A5A0000A3BA8 /* ImageViewDefault.swift */; };
+		3094559B2B07A874000A3BA8 /* TextFieldDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3094559A2B07A874000A3BA8 /* TextFieldDefault.swift */; };
+		3094559D2B07AA1E000A3BA8 /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3094559C2B07AA1E000A3BA8 /* ButtonDefault.swift */; };
+		3094559F2B07AB3A000A3BA8 /* LabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3094559E2B07AB3A000A3BA8 /* LabelDefault.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		308122052AFBBB6B0069FCFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3081220A2AFBBB6B0069FCFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		308122102AFBCA8C0069FCFC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		309455982B07A5A0000A3BA8 /* ImageViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewDefault.swift; sourceTree = "<group>"; };
+		3094559A2B07A874000A3BA8 /* TextFieldDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDefault.swift; sourceTree = "<group>"; };
+		3094559C2B07AA1E000A3BA8 /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
+		3094559E2B07AB3A000A3BA8 /* LabelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDefault.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +115,10 @@
 		308121FB2AFBBB680069FCFC /* AppNotifica */ = {
 			isa = PBXGroup;
 			children = (
-				305945E42B0269D6006F02BF /* Extensions */,
 				308121FC2AFBBB680069FCFC /* AppDelegate.swift */,
 				308121FE2AFBBB680069FCFC /* SceneDelegate.swift */,
+				309455972B07A540000A3BA8 /* Components */,
+				305945E42B0269D6006F02BF /* Extensions */,
 				305945E12B024EDD006F02BF /* Views */,
 				068E42FC2B01BF610031ED28 /* Coordinator */,
 				068E42FB2B01BF560031ED28 /* Controllers */,
@@ -117,6 +126,17 @@
 				3081220A2AFBBB6B0069FCFC /* Info.plist */,
 			);
 			path = AppNotifica;
+			sourceTree = "<group>";
+		};
+		309455972B07A540000A3BA8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				309455982B07A5A0000A3BA8 /* ImageViewDefault.swift */,
+				3094559A2B07A874000A3BA8 /* TextFieldDefault.swift */,
+				3094559C2B07AA1E000A3BA8 /* ButtonDefault.swift */,
+				3094559E2B07AB3A000A3BA8 /* LabelDefault.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,12 +210,16 @@
 			files = (
 				068E43022B01C0040031ED28 /* LoginViewController.swift in Sources */,
 				068E43042B01C0120031ED28 /* LoginView.swift in Sources */,
+				3094559F2B07AB3A000A3BA8 /* LabelDefault.swift in Sources */,
 				068E42FE2B01BF780031ED28 /* Coordinator.swift in Sources */,
+				3094559D2B07AA1E000A3BA8 /* ButtonDefault.swift in Sources */,
 				305945E32B024EFA006F02BF /* ViewCode.swift in Sources */,
 				068E43002B01BF860031ED28 /* LoginCoordinator.swift in Sources */,
+				309455992B07A5A0000A3BA8 /* ImageViewDefault.swift in Sources */,
 				308121FD2AFBBB680069FCFC /* AppDelegate.swift in Sources */,
 				308121FF2AFBBB680069FCFC /* SceneDelegate.swift in Sources */,
 				305945E62B0269F1006F02BF /* UIColor+Extension.swift in Sources */,
+				3094559B2B07A874000A3BA8 /* TextFieldDefault.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
