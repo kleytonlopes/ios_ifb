@@ -37,39 +37,42 @@ extension LoginView: ViewCode{
     }
     
     func setupConstraints() {
-        NSLayoutConstraint.activate([
-            imageViewLogo.topAnchor.constraint(equalTo: self.topAnchor, constant: 180),
-            imageViewLogo.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            imageViewLogo.widthAnchor.constraint(equalToConstant: 274.99),
-            imageViewLogo.heightAnchor.constraint(equalToConstant: 82),
-            
-            labelUnderImage.topAnchor.constraint(equalTo: imageViewLogo.bottomAnchor, constant: 3),
-            labelUnderImage.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
-            labelUnderImage.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
-            
-            textFieldUsername.topAnchor.constraint(equalTo: labelUnderImage.bottomAnchor, constant: 70),
-            textFieldUsername.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-            textFieldUsername.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
-            textFieldUsername.heightAnchor.constraint(equalToConstant: 60),
-            
-            textFieldPassword.topAnchor.constraint(equalTo: textFieldUsername.bottomAnchor, constant: 20),
-            textFieldPassword.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-            textFieldPassword.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
-            textFieldPassword.heightAnchor.constraint(equalToConstant: 60),
-            
-    
-            buttonLogin.topAnchor.constraint(equalTo: textFieldPassword.bottomAnchor, constant: 25),
-            buttonLogin.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-            buttonLogin.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
-            buttonLogin.heightAnchor.constraint(equalToConstant: 60),
-            
-            buttonRegister.topAnchor.constraint(equalTo: buttonLogin.bottomAnchor, constant: 20),
-            buttonRegister.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-            buttonRegister.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
-            buttonRegister.heightAnchor.constraint(equalToConstant: 60),
-            
+        imageViewLogo.getAutolayout()
+            .sameTopAnchorAsSuperview(180)
+            .centerXToSuperview()
+            .withWidth(274.99)
+            .withHeight(82)
+            .activateConstraints()
 
-        ])
+        labelUnderImage.getAutolayout()
+            .below(view: imageViewLogo, 3)
+            .alignToSuperview(10)
+            .activateConstraints()
+
+        textFieldUsername.getAutolayout()
+            .below(view: labelUnderImage, 70)
+            .alignToSuperview(20)
+            .withHeight(60)
+            .activateConstraints()
+
+        textFieldPassword.getAutolayout()
+            .below(view: textFieldUsername, 20)
+            .align(to: textFieldUsername)
+            .withHeight(60)
+            .activateConstraints()
+
+        buttonLogin.getAutolayout()
+            .below(view: textFieldPassword, 100)
+            .alignToSuperview(20)
+            .withHeight(60)
+            .activateConstraints()
+
+        buttonRegister.getAutolayout()
+            .below(view: buttonLogin,20)
+            .alignToSuperview(20)
+            .withHeight(60)
+            .activateConstraints()
+
     }
     
     func setupStyle() {

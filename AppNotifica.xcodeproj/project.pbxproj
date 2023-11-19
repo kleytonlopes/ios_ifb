@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		068332C62B0979F700E0FFEB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068332C52B0979F700E0FFEB /* UIView+Extension.swift */; };
 		068E42FE2B01BF780031ED28 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068E42FD2B01BF780031ED28 /* Coordinator.swift */; };
 		068E43002B01BF860031ED28 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068E42FF2B01BF860031ED28 /* LoginCoordinator.swift */; };
 		068E43022B01C0040031ED28 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068E43012B01C0040031ED28 /* LoginViewController.swift */; };
 		068E43042B01C0120031ED28 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068E43032B01C0120031ED28 /* LoginView.swift */; };
+		06D399742B0A76FA0005A0F4 /* MyAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D399732B0A76FA0005A0F4 /* MyAutoLayout.swift */; };
 		305945E32B024EFA006F02BF /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305945E22B024EFA006F02BF /* ViewCode.swift */; };
 		305945E62B0269F1006F02BF /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305945E52B0269F1006F02BF /* UIColor+Extension.swift */; };
 		308121FD2AFBBB680069FCFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308121FC2AFBBB680069FCFC /* AppDelegate.swift */; };
@@ -24,10 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		068332C52B0979F700E0FFEB /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		068E42FD2B01BF780031ED28 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		068E42FF2B01BF860031ED28 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		068E43012B01C0040031ED28 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		068E43032B01C0120031ED28 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		06D399732B0A76FA0005A0F4 /* MyAutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAutoLayout.swift; sourceTree = "<group>"; };
 		305945E22B024EFA006F02BF /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
 		305945E52B0269F1006F02BF /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		308121F92AFBBB680069FCFC /* AppNotifica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppNotifica.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +83,14 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		06D399722B0A76E00005A0F4 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				06D399732B0A76FA0005A0F4 /* MyAutoLayout.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
 		305945E12B024EDD006F02BF /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				305945E52B0269F1006F02BF /* UIColor+Extension.swift */,
+				068332C52B0979F700E0FFEB /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -122,6 +135,7 @@
 				305945E12B024EDD006F02BF /* Views */,
 				068E42FC2B01BF610031ED28 /* Coordinator */,
 				068E42FB2B01BF560031ED28 /* Controllers */,
+				06D399722B0A76E00005A0F4 /* Layout */,
 				068E42FA2B01BF430031ED28 /* Resources */,
 				3081220A2AFBBB6B0069FCFC /* Info.plist */,
 			);
@@ -212,11 +226,13 @@
 				068E43042B01C0120031ED28 /* LoginView.swift in Sources */,
 				3094559F2B07AB3A000A3BA8 /* LabelDefault.swift in Sources */,
 				068E42FE2B01BF780031ED28 /* Coordinator.swift in Sources */,
+				068332C62B0979F700E0FFEB /* UIView+Extension.swift in Sources */,
 				3094559D2B07AA1E000A3BA8 /* ButtonDefault.swift in Sources */,
 				305945E32B024EFA006F02BF /* ViewCode.swift in Sources */,
 				068E43002B01BF860031ED28 /* LoginCoordinator.swift in Sources */,
 				309455992B07A5A0000A3BA8 /* ImageViewDefault.swift in Sources */,
 				308121FD2AFBBB680069FCFC /* AppDelegate.swift in Sources */,
+				06D399742B0A76FA0005A0F4 /* MyAutoLayout.swift in Sources */,
 				308121FF2AFBBB680069FCFC /* SceneDelegate.swift in Sources */,
 				305945E62B0269F1006F02BF /* UIColor+Extension.swift in Sources */,
 				3094559B2B07A874000A3BA8 /* TextFieldDefault.swift in Sources */,
