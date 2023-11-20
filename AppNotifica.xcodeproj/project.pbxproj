@@ -19,6 +19,9 @@
 		308121FF2AFBBB680069FCFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308121FE2AFBBB680069FCFC /* SceneDelegate.swift */; };
 		308122062AFBBB6B0069FCFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 308122052AFBBB6B0069FCFC /* Assets.xcassets */; };
 		308122112AFBCA8C0069FCFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 308122102AFBCA8C0069FCFC /* LaunchScreen.storyboard */; };
+		308B8D232B0B87FD00B3F434 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B8D222B0B87FD00B3F434 /* RegisterViewController.swift */; };
+		308B8D252B0B884E00B3F434 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B8D242B0B884E00B3F434 /* RegisterView.swift */; };
+		308B8D272B0B908400B3F434 /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B8D262B0B908400B3F434 /* RegisterCoordinator.swift */; };
 		309455992B07A5A0000A3BA8 /* ImageViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309455982B07A5A0000A3BA8 /* ImageViewDefault.swift */; };
 		3094559B2B07A874000A3BA8 /* TextFieldDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3094559A2B07A874000A3BA8 /* TextFieldDefault.swift */; };
 		3094559D2B07AA1E000A3BA8 /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3094559C2B07AA1E000A3BA8 /* ButtonDefault.swift */; };
@@ -40,6 +43,9 @@
 		308122052AFBBB6B0069FCFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3081220A2AFBBB6B0069FCFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		308122102AFBCA8C0069FCFC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		308B8D222B0B87FD00B3F434 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		308B8D242B0B884E00B3F434 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		308B8D262B0B908400B3F434 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
 		309455982B07A5A0000A3BA8 /* ImageViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewDefault.swift; sourceTree = "<group>"; };
 		3094559A2B07A874000A3BA8 /* TextFieldDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDefault.swift; sourceTree = "<group>"; };
 		3094559C2B07AA1E000A3BA8 /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
@@ -70,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				068E43012B01C0040031ED28 /* LoginViewController.swift */,
+				308B8D222B0B87FD00B3F434 /* RegisterViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -79,6 +86,7 @@
 			children = (
 				068E42FD2B01BF780031ED28 /* Coordinator.swift */,
 				068E42FF2B01BF860031ED28 /* LoginCoordinator.swift */,
+				308B8D262B0B908400B3F434 /* RegisterCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -95,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				068E43032B01C0120031ED28 /* LoginView.swift */,
+				308B8D242B0B884E00B3F434 /* RegisterView.swift */,
 				305945E22B024EFA006F02BF /* ViewCode.swift */,
 			);
 			path = Views;
@@ -228,12 +237,15 @@
 				068E42FE2B01BF780031ED28 /* Coordinator.swift in Sources */,
 				068332C62B0979F700E0FFEB /* UIView+Extension.swift in Sources */,
 				3094559D2B07AA1E000A3BA8 /* ButtonDefault.swift in Sources */,
+				308B8D232B0B87FD00B3F434 /* RegisterViewController.swift in Sources */,
 				305945E32B024EFA006F02BF /* ViewCode.swift in Sources */,
 				068E43002B01BF860031ED28 /* LoginCoordinator.swift in Sources */,
 				309455992B07A5A0000A3BA8 /* ImageViewDefault.swift in Sources */,
 				308121FD2AFBBB680069FCFC /* AppDelegate.swift in Sources */,
 				06D399742B0A76FA0005A0F4 /* MyAutoLayout.swift in Sources */,
+				308B8D272B0B908400B3F434 /* RegisterCoordinator.swift in Sources */,
 				308121FF2AFBBB680069FCFC /* SceneDelegate.swift in Sources */,
+				308B8D252B0B884E00B3F434 /* RegisterView.swift in Sources */,
 				305945E62B0269F1006F02BF /* UIColor+Extension.swift in Sources */,
 				3094559B2B07A874000A3BA8 /* TextFieldDefault.swift in Sources */,
 			);

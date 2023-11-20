@@ -16,12 +16,12 @@ class MyAutoLayout {
         self.constraints = []
         
         self.view.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.deactivate(self.view.constraints)
+//        NSLayoutConstraint.deactivate(self.view.constraints)
     }
     
     func sameTopAnchor(as view: UIView,_ constant: CGFloat = 0) -> MyAutoLayout {
         self.constraints.append(
-            self.view.topAnchor.constraint(equalTo: view.topAnchor, constant: constant)
+            self.view.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: constant)
         )
         return self
     }

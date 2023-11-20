@@ -24,6 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window?.makeKeyAndVisible()
         let loginCoordinator = LoginCoordinator(navigation: navigationController)
         loginCoordinator.start()
+
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
