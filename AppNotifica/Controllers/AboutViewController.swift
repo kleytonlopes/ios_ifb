@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  AboutViewController.swift
 //  AppNotifica
 //
 //  Created by Kleyton Lopes on 22/11/23.
@@ -7,19 +7,20 @@
 
 import UIKit
 
-class HomeViewController: ViewControllerDefault {    
-    lazy var homeView: HomeView = {
-        let view = HomeView()
+class AboutViewController: ViewControllerDefault {
+    
+    lazy var aboutView: AboutView = {
+        let view = AboutView()
         return view
     }()
     
     override func loadView() {
-        self.view = homeView
+        self.view = aboutView
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Home"
+        self.title = "Sobre"
     }
     
 }

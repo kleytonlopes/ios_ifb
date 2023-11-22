@@ -11,6 +11,14 @@
 		063FA3382B0E447F003F83B4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA3372B0E447F003F83B4 /* HomeView.swift */; };
 		063FA33A2B0E467F003F83B4 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA3392B0E467F003F83B4 /* HomeCoordinator.swift */; };
 		063FA33C2B0E4793003F83B4 /* ViewControllerDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA33B2B0E4793003F83B4 /* ViewControllerDefault.swift */; };
+		063FA3402B0E63F0003F83B4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA33F2B0E63F0003F83B4 /* TabBarController.swift */; };
+		063FA3422B0E6427003F83B4 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA3412B0E6427003F83B4 /* AboutViewController.swift */; };
+		063FA3442B0E6442003F83B4 /* AddNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA3432B0E6442003F83B4 /* AddNotificationViewController.swift */; };
+		063FA3462B0E653A003F83B4 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA3452B0E653A003F83B4 /* TabBarCoordinator.swift */; };
+		063FA3482B0E6551003F83B4 /* AddNotificationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA3472B0E6551003F83B4 /* AddNotificationCoordinator.swift */; };
+		063FA34A2B0E6571003F83B4 /* AboutCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA3492B0E6571003F83B4 /* AboutCoordinator.swift */; };
+		063FA34C2B0E6682003F83B4 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA34B2B0E6682003F83B4 /* AboutView.swift */; };
+		063FA34E2B0E669A003F83B4 /* AddNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA34D2B0E669A003F83B4 /* AddNotification.swift */; };
 		068332C62B0979F700E0FFEB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068332C52B0979F700E0FFEB /* UIView+Extension.swift */; };
 		068E42FE2B01BF780031ED28 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068E42FD2B01BF780031ED28 /* Coordinator.swift */; };
 		068E43002B01BF860031ED28 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068E42FF2B01BF860031ED28 /* LoginCoordinator.swift */; };
@@ -37,6 +45,14 @@
 		063FA3372B0E447F003F83B4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		063FA3392B0E467F003F83B4 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		063FA33B2B0E4793003F83B4 /* ViewControllerDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDefault.swift; sourceTree = "<group>"; };
+		063FA33F2B0E63F0003F83B4 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		063FA3412B0E6427003F83B4 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		063FA3432B0E6442003F83B4 /* AddNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNotificationViewController.swift; sourceTree = "<group>"; };
+		063FA3452B0E653A003F83B4 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		063FA3472B0E6551003F83B4 /* AddNotificationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNotificationCoordinator.swift; sourceTree = "<group>"; };
+		063FA3492B0E6571003F83B4 /* AboutCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCoordinator.swift; sourceTree = "<group>"; };
+		063FA34B2B0E6682003F83B4 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		063FA34D2B0E669A003F83B4 /* AddNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNotification.swift; sourceTree = "<group>"; };
 		068332C52B0979F700E0FFEB /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		068E42FD2B01BF780031ED28 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		068E42FF2B01BF860031ED28 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
@@ -83,6 +99,9 @@
 		068E42FB2B01BF560031ED28 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				063FA33F2B0E63F0003F83B4 /* TabBarController.swift */,
+				063FA3412B0E6427003F83B4 /* AboutViewController.swift */,
+				063FA3432B0E6442003F83B4 /* AddNotificationViewController.swift */,
 				063FA3352B0E4463003F83B4 /* HomeViewController.swift */,
 				068E43012B01C0040031ED28 /* LoginViewController.swift */,
 				308B8D222B0B87FD00B3F434 /* RegisterViewController.swift */,
@@ -97,6 +116,9 @@
 				068E42FF2B01BF860031ED28 /* LoginCoordinator.swift */,
 				308B8D262B0B908400B3F434 /* RegisterCoordinator.swift */,
 				063FA3392B0E467F003F83B4 /* HomeCoordinator.swift */,
+				063FA3452B0E653A003F83B4 /* TabBarCoordinator.swift */,
+				063FA3472B0E6551003F83B4 /* AddNotificationCoordinator.swift */,
+				063FA3492B0E6571003F83B4 /* AboutCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -116,6 +138,8 @@
 				068E43032B01C0120031ED28 /* LoginView.swift */,
 				308B8D242B0B884E00B3F434 /* RegisterView.swift */,
 				305945E22B024EFA006F02BF /* ViewCode.swift */,
+				063FA34B2B0E6682003F83B4 /* AboutView.swift */,
+				063FA34D2B0E669A003F83B4 /* AddNotification.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -243,12 +267,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				063FA34A2B0E6571003F83B4 /* AboutCoordinator.swift in Sources */,
 				068E43022B01C0040031ED28 /* LoginViewController.swift in Sources */,
 				063FA3382B0E447F003F83B4 /* HomeView.swift in Sources */,
+				063FA3402B0E63F0003F83B4 /* TabBarController.swift in Sources */,
+				063FA3462B0E653A003F83B4 /* TabBarCoordinator.swift in Sources */,
 				068E43042B01C0120031ED28 /* LoginView.swift in Sources */,
 				3094559F2B07AB3A000A3BA8 /* LabelDefault.swift in Sources */,
+				063FA3442B0E6442003F83B4 /* AddNotificationViewController.swift in Sources */,
+				063FA34C2B0E6682003F83B4 /* AboutView.swift in Sources */,
 				068E42FE2B01BF780031ED28 /* Coordinator.swift in Sources */,
 				068332C62B0979F700E0FFEB /* UIView+Extension.swift in Sources */,
+				063FA34E2B0E669A003F83B4 /* AddNotification.swift in Sources */,
 				063FA3362B0E4463003F83B4 /* HomeViewController.swift in Sources */,
 				3094559D2B07AA1E000A3BA8 /* ButtonDefault.swift in Sources */,
 				308B8D232B0B87FD00B3F434 /* RegisterViewController.swift in Sources */,
@@ -262,8 +292,10 @@
 				308121FF2AFBBB680069FCFC /* SceneDelegate.swift in Sources */,
 				308B8D252B0B884E00B3F434 /* RegisterView.swift in Sources */,
 				063FA33A2B0E467F003F83B4 /* HomeCoordinator.swift in Sources */,
+				063FA3482B0E6551003F83B4 /* AddNotificationCoordinator.swift in Sources */,
 				305945E62B0269F1006F02BF /* UIColor+Extension.swift in Sources */,
 				3094559B2B07A874000A3BA8 /* TextFieldDefault.swift in Sources */,
+				063FA3422B0E6427003F83B4 /* AboutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

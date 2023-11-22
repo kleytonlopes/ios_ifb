@@ -10,11 +10,17 @@ import UIKit
 class HomeCoordinator : Coordinator {
     var navigation: UINavigationController
     
+    lazy var homeViewController: HomeViewController = {
+        let viewController = HomeViewController()
+        viewController.tabBarItem.title = "Home"
+        viewController.tabBarItem.image = UIImage(named: "home")
+        return viewController
+    }()
+    
     init(navigation: UINavigationController) {
         self.navigation = navigation
     }
     func start() {
-        let homeViewController = HomeViewController()
         self.navigation.pushViewController(homeViewController, animated: true)
     }
 }
