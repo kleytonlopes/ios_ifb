@@ -12,10 +12,22 @@ class LoginView: UIView {
     var onLoginTap: (() -> Void)?
     
     private lazy var imageViewLogo = ImageViewDefault(imageName: "logo-login")
+    
     private lazy var labelUnderImage = LabelDefault(text: "Registre e gerencie as ocorrências do seu IF")
-    private lazy var textFieldUsername = TextFieldDefault(placeholder: "Email")
-    private lazy var textFieldPassword = TextFieldDefault(placeholder: "Senha")
+    
+    private lazy var textFieldUsername = TextFieldDefault(
+        placeholder: "Email",
+        keyboardType: .emailAddress,
+        returnType: .next
+    )
+    
+    private lazy var textFieldPassword = TextFieldDefault(
+        placeholder: "Senha",
+        returnType: .done,
+        isSecurityEntry: true
+    )
     private lazy var buttonLogin = ButtonDefault(title: "LOGAR")
+    
     private lazy var buttonRegister = ButtonDefault(title: "REGISTRAR")
     
     override init(frame: CGRect) {

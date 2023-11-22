@@ -86,7 +86,6 @@
 				063FA3352B0E4463003F83B4 /* HomeViewController.swift */,
 				068E43012B01C0040031ED28 /* LoginViewController.swift */,
 				308B8D222B0B87FD00B3F434 /* RegisterViewController.swift */,
-				063FA33B2B0E4793003F83B4 /* ViewControllerDefault.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -166,6 +165,7 @@
 		309455972B07A540000A3BA8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				063FA33B2B0E4793003F83B4 /* ViewControllerDefault.swift */,
 				309455982B07A5A0000A3BA8 /* ImageViewDefault.swift */,
 				3094559A2B07A874000A3BA8 /* TextFieldDefault.swift */,
 				3094559C2B07AA1E000A3BA8 /* ButtonDefault.swift */,

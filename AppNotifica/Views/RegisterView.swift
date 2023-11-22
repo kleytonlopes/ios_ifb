@@ -10,10 +10,27 @@ import UIKit
 class RegisterView: UIView {
     
     private lazy var labelHelp = LabelDefault(text: "Entre com seu e-mail e senha para se registrar.", fontSize: 20)
-    private lazy var textFieldUsername = TextFieldDefault(placeholder: "Email")
-    private lazy var textFieldPassword = TextFieldDefault(placeholder: "Senha")
-    private lazy var textFieldConfirmPassword = TextFieldDefault(placeholder: "Confirme sua senha")
+    
+    private lazy var textFieldUsername = TextFieldDefault(
+        placeholder: "Email",
+        keyboardType: .emailAddress,
+        returnType: .next
+    )
+    
+    private lazy var textFieldPassword = TextFieldDefault(
+        placeholder: "Senha",
+        returnType: .next,
+        isSecurityEntry: true
+    )
+    
+    private lazy var textFieldConfirmPassword = TextFieldDefault(
+        placeholder: "Confirme sua senha",
+        returnType: .done,
+        isSecurityEntry: true
+    )
+    
     private lazy var buttonLogin = ButtonDefault(title: "LOGAR")
+    
     private lazy var buttonRegister = ButtonDefault(title: "REGISTRAR")
     
     var onLoginTap: (() -> Void)?
