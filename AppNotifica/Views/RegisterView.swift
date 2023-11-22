@@ -58,6 +58,10 @@ extension RegisterView: ViewCode {
         self.addSubview(textFieldConfirmPassword)
         self.addSubview(buttonLogin)
         self.addSubview(buttonRegister)
+
+        textFieldUsername.delegate = self
+        textFieldPassword.delegate = self
+        textFieldConfirmPassword.delegate = self
         
         self.buttonLogin.addTarget(self, action: #selector(loginTap), for: .touchUpInside)
     }
@@ -101,3 +105,18 @@ extension RegisterView: ViewCode {
     }
     
 }
+
+extension RegisterView: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if(textField == self.textFieldUsername){
+            textFieldPassword.becomeFirstResponder()
+        } else if(textField == self.textFieldPassword){
+            textFieldConfirmPassword.becomeFirstResponder()
+        }
+        else{
+            textField.resignFirstResponder()
+        }
+        return true
+    }
+}
+

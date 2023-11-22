@@ -58,6 +58,9 @@ extension LoginView: ViewCode{
         self.addSubview(buttonLogin)
         self.addSubview(buttonRegister)
         
+        textFieldPassword.delegate = self
+        textFieldUsername.delegate = self
+        
         self.buttonRegister.addTarget(self, action: #selector(registerTap), for: .touchUpInside)
         self.buttonLogin.addTarget(self, action: #selector(loginTap), for: .touchUpInside)
     }
@@ -104,6 +107,15 @@ extension LoginView: ViewCode{
     func setupStyle() {
         self.backgroundColor = .viewBackgroundColor
     }
-    
-    
+}
+
+extension LoginView: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if(textField == self.textFieldUsername){
+            textFieldPassword.becomeFirstResponder()
+        } else{
+            textField.resignFirstResponder()
+        }
+        return true
+    }
 }
