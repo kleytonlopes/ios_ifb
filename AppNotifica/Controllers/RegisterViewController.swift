@@ -26,6 +26,7 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationItem.setHidesBackButton(true, animated: false)
         self.title = "Registrar"
     }
     
