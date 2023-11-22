@@ -26,7 +26,7 @@ class LoginView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    @objc private func loginTap(){
+    @objc private func registerTap(){
         onRegisterTap?()
     }
     
@@ -41,7 +41,7 @@ extension LoginView: ViewCode{
         self.addSubview(buttonLogin)
         self.addSubview(buttonRegister)
         
-        self.buttonRegister.addTarget(self, action: #selector(loginTap), for: .touchUpInside)
+        self.buttonRegister.addTarget(self, action: #selector(registerTap), for: .touchUpInside)
     }
     
     func setupConstraints() {

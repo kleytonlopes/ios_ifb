@@ -11,5 +11,4 @@ extension UIColor {
     static let mainColor = UIColor(named: "mainColor")
     static let viewBackgroundColor = UIColor(named: "viewBackgroundColor")
     static let textFieldBackgroundColor = UIColor(named: "textFieldBackgroundColor")
-
 }

@@ -16,6 +16,8 @@ class RegisterView: UIView {
     private lazy var buttonLogin = ButtonDefault(title: "LOGAR")
     private lazy var buttonRegister = ButtonDefault(title: "REGISTRAR")
     
+    var onLoginTap: (() -> Void)?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -24,7 +26,11 @@ class RegisterView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
- 
+    
+    @objc private func loginTap(){
+        onLoginTap?()
+    }
+
 }
 
 extension RegisterView: ViewCode {
@@ -36,6 +42,7 @@ extension RegisterView: ViewCode {
         self.addSubview(buttonLogin)
         self.addSubview(buttonRegister)
         
+        self.buttonLogin.addTarget(self, action: #selector(loginTap), for: .touchUpInside)
     }
     
     func setupConstraints() {
@@ -75,6 +82,5 @@ extension RegisterView: ViewCode {
         self.backgroundColor = .viewBackgroundColor
 
     }
-    
     
 }
