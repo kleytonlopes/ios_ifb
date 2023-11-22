@@ -9,6 +9,7 @@ import UIKit
 
 class LoginView: UIView {
     var onRegisterTap: (() -> Void)?
+    var onLoginTap: (() -> Void)?
     
     private lazy var imageViewLogo = ImageViewDefault(imageName: "logo-login")
     private lazy var labelUnderImage = LabelDefault(text: "Registre e gerencie as ocorrências do seu IF")
@@ -30,6 +31,10 @@ class LoginView: UIView {
         onRegisterTap?()
     }
     
+    @objc private func loginTap(){
+        onLoginTap?()
+    }
+    
 }
 
 extension LoginView: ViewCode{
@@ -42,6 +47,7 @@ extension LoginView: ViewCode{
         self.addSubview(buttonRegister)
         
         self.buttonRegister.addTarget(self, action: #selector(registerTap), for: .touchUpInside)
+        self.buttonLogin.addTarget(self, action: #selector(loginTap), for: .touchUpInside)
     }
     
     func setupConstraints() {
