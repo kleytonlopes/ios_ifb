@@ -19,7 +19,7 @@ class AddNotificationViewController: ViewControllerDefault {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Adicionar"
+        self.title = "Nova Ocorrência"
     }
     
 }
