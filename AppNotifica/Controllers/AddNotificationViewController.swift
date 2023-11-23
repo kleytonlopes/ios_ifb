@@ -10,6 +10,11 @@ import UIKit
 class AddNotificationViewController: ViewControllerDefault {
     lazy var addNotificationView: AddNotificationView = {
         let view = AddNotificationView()
+        view.onCameraTap = {
+            ImageChooser().selectImage(self) { image in
+                view.setImage(image)
+            }
+        }
         return view
     }()
     

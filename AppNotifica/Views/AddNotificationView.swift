@@ -9,14 +9,19 @@ import UIKit
 
 class AddNotificationView : UIView {
     
-    lazy var viewContainerCamera: UIView = {
-        let view = UIView()
+    var onCameraTap:(()-> Void)?
+    
+    lazy var imageViewContainerCamera: UIImageView = {
+        let view = UIImageView()
         view.backgroundColor = .lightGray
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.isUserInteractionEnabled = true
+        let tap = UITapGestureRecognizer(target: self, action: #selector(didTapCamera))
+        view.addGestureRecognizer(tap)
         return view
     }()
     
-    lazy var imageViewCamera: UIImageView = {
+    lazy var imageViewCameraIcon: UIImageView = {
         let view = UIImageView()
         view.image = UIImage(named: "camera-icon")
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -39,12 +44,21 @@ class AddNotificationView : UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    @objc func didTapCamera(){
+        self.onCameraTap?()
+    }
+    
+    func setImage(_ image: UIImage){
+        self.imageViewCameraIcon.isHidden = true
+        self.imageViewContainerCamera.image = image
+    }
+    
 }
 
 extension AddNotificationView: ViewCode{
     func setupHierarchy() {
-        self.addSubview(viewContainerCamera)
-        self.viewContainerCamera.addSubview(imageViewCamera)
+        self.addSubview(imageViewContainerCamera)
+        self.imageViewContainerCamera.addSubview(imageViewCameraIcon)
         self.addSubview(textFieldTitle)
         self.addSubview(textFieldDescription)
         self.addSubview(textFieldLocation)
@@ -54,23 +68,23 @@ extension AddNotificationView: ViewCode{
     }
     
     func setupConstraints() {
-        viewContainerCamera.getAutolayout()
+        imageViewContainerCamera.getAutolayout()
             .sameTopAnchorAsSuperview(20)
             .alignToSuperview(15)
             .withHeight(200)
             .activateConstraints()
         
-        imageViewCamera.getAutolayout()
+        imageViewCameraIcon.getAutolayout()
             .withHeight(60)
             .withWidth(60)
-            .sameTrailingAnchor(as: viewContainerCamera, 20)
-            .below(view: viewContainerCamera, -65)
+            .sameTrailingAnchor(as: imageViewContainerCamera, 20)
+            .below(view: imageViewContainerCamera, -65)
             .activateConstraints()
         
         textFieldTitle.getAutolayout()
             .alignToSuperview(15)
             .withHeight(60)
-            .below(view: viewContainerCamera, 20)
+            .below(view: imageViewContainerCamera, 20)
             .activateConstraints()
         
         textFieldDescription.getAutolayout()

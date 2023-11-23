@@ -19,6 +19,7 @@
 		063FA34A2B0E6571003F83B4 /* AboutCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA3492B0E6571003F83B4 /* AboutCoordinator.swift */; };
 		063FA34C2B0E6682003F83B4 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA34B2B0E6682003F83B4 /* AboutView.swift */; };
 		063FA34E2B0E669A003F83B4 /* AddNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA34D2B0E669A003F83B4 /* AddNotificationView.swift */; };
+		063FA3512B0ED081003F83B4 /* ImageChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA3502B0ED081003F83B4 /* ImageChooser.swift */; };
 		068332C62B0979F700E0FFEB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068332C52B0979F700E0FFEB /* UIView+Extension.swift */; };
 		068E42FE2B01BF780031ED28 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068E42FD2B01BF780031ED28 /* Coordinator.swift */; };
 		068E43002B01BF860031ED28 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068E42FF2B01BF860031ED28 /* LoginCoordinator.swift */; };
@@ -53,6 +54,7 @@
 		063FA3492B0E6571003F83B4 /* AboutCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCoordinator.swift; sourceTree = "<group>"; };
 		063FA34B2B0E6682003F83B4 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		063FA34D2B0E669A003F83B4 /* AddNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNotificationView.swift; sourceTree = "<group>"; };
+		063FA3502B0ED081003F83B4 /* ImageChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageChooser.swift; sourceTree = "<group>"; };
 		068332C52B0979F700E0FFEB /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		068E42FD2B01BF780031ED28 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		068E42FF2B01BF860031ED28 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
@@ -87,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		063FA34F2B0ED072003F83B4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				063FA3502B0ED081003F83B4 /* ImageChooser.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		068E42FA2B01BF430031ED28 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +182,7 @@
 		308121FB2AFBBB680069FCFC /* AppNotifica */ = {
 			isa = PBXGroup;
 			children = (
+				063FA34F2B0ED072003F83B4 /* Utils */,
 				308121FC2AFBBB680069FCFC /* AppDelegate.swift */,
 				308121FE2AFBBB680069FCFC /* SceneDelegate.swift */,
 				309455972B07A540000A3BA8 /* Components */,
@@ -290,6 +301,7 @@
 				06D399742B0A76FA0005A0F4 /* MyAutoLayout.swift in Sources */,
 				308B8D272B0B908400B3F434 /* RegisterCoordinator.swift in Sources */,
 				308121FF2AFBBB680069FCFC /* SceneDelegate.swift in Sources */,
+				063FA3512B0ED081003F83B4 /* ImageChooser.swift in Sources */,
 				308B8D252B0B884E00B3F434 /* RegisterView.swift in Sources */,
 				063FA33A2B0E467F003F83B4 /* HomeCoordinator.swift in Sources */,
 				063FA3482B0E6551003F83B4 /* AddNotificationCoordinator.swift in Sources */,
