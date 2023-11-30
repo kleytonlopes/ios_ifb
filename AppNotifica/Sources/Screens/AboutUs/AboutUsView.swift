@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AboutView: UIView {
+class AboutUsView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -20,7 +20,7 @@ class AboutView: UIView {
     
 }
 
-extension AboutView: ViewCodeProtocol{
+extension AboutUsView: ViewCodeProtocol{
     func setupHierarchy() {
     }
     

@@ -7,10 +7,10 @@
 
 import UIKit
 
-class AboutViewController: ViewControllerDefault {
+class AboutUsViewController: ViewControllerDefault {
     
-    lazy var aboutView: AboutView = {
-        let view = AboutView()
+    lazy var aboutView: AboutUsView = {
+        let view = AboutUsView()
         return view
     }()
     

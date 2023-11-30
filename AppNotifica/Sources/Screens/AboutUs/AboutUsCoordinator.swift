@@ -7,11 +7,11 @@
 
 import UIKit
 
-class AboutCoordinator : CoordinatorProtocol {
+class AboutUsCoordinator : CoordinatorProtocol {
     var navigation: UINavigationController
     
-    lazy var aboutViewController: AboutViewController = {
-        let viewController = AboutViewController()
+    lazy var aboutViewController: AboutUsViewController = {
+        let viewController = AboutUsViewController()
         viewController.tabBarItem.title = "Sobre"
         viewController.tabBarItem.image = UIImage(named: "about-icon")
         return viewController
