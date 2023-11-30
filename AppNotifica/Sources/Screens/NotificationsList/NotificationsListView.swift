@@ -8,6 +8,21 @@
 import UIKit
 
 class NotificationsListView: UIView {
+    public static let CELL_IDENTIFIER = "NotificationCell";
+    
+    lazy var tableView: NotificationsTableView = {
+        let tableView = NotificationsTableView()
+        tableView.register(UITableViewCell.self,
+                           forCellReuseIdentifier: NotificationsListView.CELL_IDENTIFIER)
+        return tableView
+    }()
+    
+    
+    weak var dataSource: UITableViewDataSource? {
+        didSet{
+            tableView.dataSource = dataSource
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -22,9 +37,15 @@ class NotificationsListView: UIView {
 
 extension NotificationsListView: ViewCodeProtocol{
     func setupHierarchy() {
+        self.addSubview(tableView)
     }
     
     func setupConstraints() {
+        tableView.getAutolayout()
+            .sameTopAnchorAsSuperview()
+            .withHeight(300)
+            .alignToSuperview()
+            .activateConstraints()
     }
     
     func setupStyle() {
