@@ -185,7 +185,7 @@
 				063FA34F2B0ED072003F83B4 /* Utils */,
 				308121FC2AFBBB680069FCFC /* AppDelegate.swift */,
 				308121FE2AFBBB680069FCFC /* SceneDelegate.swift */,
-				309455972B07A540000A3BA8 /* Components */,
+				309455972B07A540000A3BA8 /* ReusableComponents */,
 				305945E42B0269D6006F02BF /* Extensions */,
 				305945E12B024EDD006F02BF /* Views */,
 				068E42FC2B01BF610031ED28 /* Coordinator */,
@@ -197,7 +197,7 @@
 			path = AppNotifica;
 			sourceTree = "<group>";
 		};
-		309455972B07A540000A3BA8 /* Components */ = {
+		309455972B07A540000A3BA8 /* ReusableComponents */ = {
 			isa = PBXGroup;
 			children = (
 				063FA33B2B0E4793003F83B4 /* ViewControllerDefault.swift */,
@@ -206,7 +206,7 @@
 				3094559C2B07AA1E000A3BA8 /* ButtonDefault.swift */,
 				3094559E2B07AB3A000A3BA8 /* LabelDefault.swift */,
 			);
-			path = Components;
+			path = ReusableComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
