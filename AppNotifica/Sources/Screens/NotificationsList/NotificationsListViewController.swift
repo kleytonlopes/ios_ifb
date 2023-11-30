@@ -7,14 +7,14 @@
 
 import UIKit
 
-class HomeViewController: ViewControllerDefault {    
-    lazy var homeView: HomeView = {
-        let view = HomeView()
+class NotificationsListViewController: ViewControllerDefault {    
+    lazy var listView: NotificationsListView = {
+        let view = NotificationsListView()
         return view
     }()
     
     override func loadView() {
-        self.view = homeView
+        self.view = listView
     }
     
     override func viewDidLoad() {

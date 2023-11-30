@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		063FA3362B0E4463003F83B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA3352B0E4463003F83B4 /* HomeViewController.swift */; };
-		063FA3382B0E447F003F83B4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA3372B0E447F003F83B4 /* HomeView.swift */; };
-		063FA33A2B0E467F003F83B4 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA3392B0E467F003F83B4 /* HomeCoordinator.swift */; };
+		063FA3362B0E4463003F83B4 /* NotificationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA3352B0E4463003F83B4 /* NotificationsListViewController.swift */; };
+		063FA3382B0E447F003F83B4 /* NotificationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA3372B0E447F003F83B4 /* NotificationsListView.swift */; };
+		063FA33A2B0E467F003F83B4 /* NotificationsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA3392B0E467F003F83B4 /* NotificationsListCoordinator.swift */; };
 		063FA33C2B0E4793003F83B4 /* ViewControllerDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA33B2B0E4793003F83B4 /* ViewControllerDefault.swift */; };
 		063FA3402B0E63F0003F83B4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA33F2B0E63F0003F83B4 /* TabBarController.swift */; };
 		063FA3422B0E6427003F83B4 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA3412B0E6427003F83B4 /* AboutUsViewController.swift */; };
@@ -42,9 +42,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		063FA3352B0E4463003F83B4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		063FA3372B0E447F003F83B4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		063FA3392B0E467F003F83B4 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		063FA3352B0E4463003F83B4 /* NotificationsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsListViewController.swift; sourceTree = "<group>"; };
+		063FA3372B0E447F003F83B4 /* NotificationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsListView.swift; sourceTree = "<group>"; };
+		063FA3392B0E467F003F83B4 /* NotificationsListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsListCoordinator.swift; sourceTree = "<group>"; };
 		063FA33B2B0E4793003F83B4 /* ViewControllerDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDefault.swift; sourceTree = "<group>"; };
 		063FA33F2B0E63F0003F83B4 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		063FA3412B0E6427003F83B4 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
@@ -152,9 +152,9 @@
 		064F72882B18EE150069A6F7 /* NotificationsList */ = {
 			isa = PBXGroup;
 			children = (
-				063FA3372B0E447F003F83B4 /* HomeView.swift */,
-				063FA3352B0E4463003F83B4 /* HomeViewController.swift */,
-				063FA3392B0E467F003F83B4 /* HomeCoordinator.swift */,
+				063FA3372B0E447F003F83B4 /* NotificationsListView.swift */,
+				063FA3352B0E4463003F83B4 /* NotificationsListViewController.swift */,
+				063FA3392B0E467F003F83B4 /* NotificationsListCoordinator.swift */,
 			);
 			path = NotificationsList;
 			sourceTree = "<group>";
@@ -320,7 +320,7 @@
 			files = (
 				063FA34A2B0E6571003F83B4 /* AboutUsCoordinator.swift in Sources */,
 				068E43022B01C0040031ED28 /* LoginViewController.swift in Sources */,
-				063FA3382B0E447F003F83B4 /* HomeView.swift in Sources */,
+				063FA3382B0E447F003F83B4 /* NotificationsListView.swift in Sources */,
 				063FA3402B0E63F0003F83B4 /* TabBarController.swift in Sources */,
 				063FA3462B0E653A003F83B4 /* TabBarCoordinator.swift in Sources */,
 				068E43042B01C0120031ED28 /* LoginView.swift in Sources */,
@@ -330,7 +330,7 @@
 				068E42FE2B01BF780031ED28 /* CoordinatorProtocol.swift in Sources */,
 				068332C62B0979F700E0FFEB /* UIView+Extension.swift in Sources */,
 				063FA34E2B0E669A003F83B4 /* AddNotificationView.swift in Sources */,
-				063FA3362B0E4463003F83B4 /* HomeViewController.swift in Sources */,
+				063FA3362B0E4463003F83B4 /* NotificationsListViewController.swift in Sources */,
 				3094559D2B07AA1E000A3BA8 /* ButtonDefault.swift in Sources */,
 				308B8D232B0B87FD00B3F434 /* RegisterViewController.swift in Sources */,
 				305945E32B024EFA006F02BF /* ViewCodeProtocol.swift in Sources */,
@@ -343,7 +343,7 @@
 				308121FF2AFBBB680069FCFC /* SceneDelegate.swift in Sources */,
 				063FA3512B0ED081003F83B4 /* ImageChooser.swift in Sources */,
 				308B8D252B0B884E00B3F434 /* RegisterView.swift in Sources */,
-				063FA33A2B0E467F003F83B4 /* HomeCoordinator.swift in Sources */,
+				063FA33A2B0E467F003F83B4 /* NotificationsListCoordinator.swift in Sources */,
 				063FA3482B0E6551003F83B4 /* AddNotificationCoordinator.swift in Sources */,
 				305945E62B0269F1006F02BF /* UIColor+Extension.swift in Sources */,
 				3094559B2B07A874000A3BA8 /* TextFieldDefault.swift in Sources */,

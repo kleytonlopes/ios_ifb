@@ -7,11 +7,11 @@
 
 import UIKit
 
-class HomeCoordinator : CoordinatorProtocol {
+class NotificationsListCoordinator : CoordinatorProtocol {
     var navigation: UINavigationController
     
-    lazy var homeViewController: HomeViewController = {
-        let viewController = HomeViewController()
+    lazy var listViewController: NotificationsListViewController = {
+        let viewController = NotificationsListViewController()
         viewController.tabBarItem.title = "Home"
         viewController.tabBarItem.image = UIImage(named: "home")
         return viewController
@@ -21,6 +21,6 @@ class HomeCoordinator : CoordinatorProtocol {
         self.navigation = navigation
     }
     func start() {
-        self.navigation.pushViewController(homeViewController, animated: true)
+        self.navigation.pushViewController(listViewController, animated: true)
     }
 }

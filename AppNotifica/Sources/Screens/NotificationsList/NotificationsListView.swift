@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeView: UIView {
+class NotificationsListView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -20,7 +20,7 @@ class HomeView: UIView {
     
 }
 
-extension HomeView: ViewCodeProtocol{
+extension NotificationsListView: ViewCodeProtocol{
     func setupHierarchy() {
     }
     
