@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AboutCoordinator : Coordinator {
+class AboutCoordinator : CoordinatorProtocol {
     var navigation: UINavigationController
     
     lazy var aboutViewController: AboutViewController = {

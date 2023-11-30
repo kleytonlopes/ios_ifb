@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeCoordinator : Coordinator {
+class HomeCoordinator : CoordinatorProtocol {
     var navigation: UINavigationController
     
     lazy var homeViewController: HomeViewController = {

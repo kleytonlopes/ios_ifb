@@ -21,7 +21,7 @@
 		063FA34E2B0E669A003F83B4 /* AddNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA34D2B0E669A003F83B4 /* AddNotificationView.swift */; };
 		063FA3512B0ED081003F83B4 /* ImageChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA3502B0ED081003F83B4 /* ImageChooser.swift */; };
 		068332C62B0979F700E0FFEB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068332C52B0979F700E0FFEB /* UIView+Extension.swift */; };
-		068E42FE2B01BF780031ED28 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068E42FD2B01BF780031ED28 /* Coordinator.swift */; };
+		068E42FE2B01BF780031ED28 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068E42FD2B01BF780031ED28 /* CoordinatorProtocol.swift */; };
 		068E43002B01BF860031ED28 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068E42FF2B01BF860031ED28 /* LoginCoordinator.swift */; };
 		068E43022B01C0040031ED28 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068E43012B01C0040031ED28 /* LoginViewController.swift */; };
 		068E43042B01C0120031ED28 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068E43032B01C0120031ED28 /* LoginView.swift */; };
@@ -56,7 +56,7 @@
 		063FA34D2B0E669A003F83B4 /* AddNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNotificationView.swift; sourceTree = "<group>"; };
 		063FA3502B0ED081003F83B4 /* ImageChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageChooser.swift; sourceTree = "<group>"; };
 		068332C52B0979F700E0FFEB /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		068E42FD2B01BF780031ED28 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		068E42FD2B01BF780031ED28 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		068E42FF2B01BF860031ED28 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		068E43012B01C0040031ED28 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		068E43032B01C0120031ED28 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -101,6 +101,7 @@
 		064F72832B18EC870069A6F7 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				068E42FD2B01BF780031ED28 /* CoordinatorProtocol.swift */,
 				305945E22B024EFA006F02BF /* ViewCodeProtocol.swift */,
 			);
 			path = Protocols;
@@ -204,7 +205,6 @@
 		068E42FC2B01BF610031ED28 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				068E42FD2B01BF780031ED28 /* Coordinator.swift */,
 				063FA3452B0E653A003F83B4 /* TabBarCoordinator.swift */,
 			);
 			path = Coordinator;
@@ -335,7 +335,7 @@
 				3094559F2B07AB3A000A3BA8 /* LabelDefault.swift in Sources */,
 				063FA3442B0E6442003F83B4 /* AddNotificationViewController.swift in Sources */,
 				063FA34C2B0E6682003F83B4 /* AboutView.swift in Sources */,
-				068E42FE2B01BF780031ED28 /* Coordinator.swift in Sources */,
+				068E42FE2B01BF780031ED28 /* CoordinatorProtocol.swift in Sources */,
 				068332C62B0979F700E0FFEB /* UIView+Extension.swift in Sources */,
 				063FA34E2B0E669A003F83B4 /* AddNotificationView.swift in Sources */,
 				063FA3362B0E4463003F83B4 /* HomeViewController.swift in Sources */,

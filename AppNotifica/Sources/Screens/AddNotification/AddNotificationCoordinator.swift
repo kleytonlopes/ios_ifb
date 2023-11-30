@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AddNotificationCoordinator : Coordinator {
+class AddNotificationCoordinator : CoordinatorProtocol {
     var navigation: UINavigationController
     
     lazy var viewController: AddNotificationViewController = {

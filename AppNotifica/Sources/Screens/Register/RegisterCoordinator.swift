@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RegisterCoordinator : Coordinator {
+class RegisterCoordinator : CoordinatorProtocol {
     var navigation: UINavigationController
     
     init(navigation: UINavigationController) {

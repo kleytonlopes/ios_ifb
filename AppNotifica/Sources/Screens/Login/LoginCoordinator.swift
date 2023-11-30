@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginCoordinator : Coordinator {
+class LoginCoordinator : CoordinatorProtocol {
     var navigation: UINavigationController
     
     init(navigation: UINavigationController) {
