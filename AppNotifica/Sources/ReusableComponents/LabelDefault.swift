@@ -8,16 +8,26 @@
 import UIKit
 
 class LabelDefault: UILabel {
-    init(text: String, fontSize: CGFloat = 17) {
+    init(text: String = "",
+         fontSize: CGFloat = 17,
+         fontWeight: UIFont.Weight = .regular,
+         textAlignment: NSTextAlignment = .center,
+         color: UIColor? = UIColor.textColor
+    ) {
         super.init(frame: .zero)
-        setup(text: text, fontSize: fontSize)
+        setup(text, fontSize, fontWeight , textAlignment, color)
     }
     
-    private func setup(text: String, fontSize: CGFloat){
+    private func setup(_ text: String,
+                       _ size: CGFloat,
+                       _ weight: UIFont.Weight,
+                       _ textAlignment: NSTextAlignment,
+                       _ color: UIColor?
+    ){
         self.text = text
-        self.textColor = UIColor(red: 138/255, green: 138/255, blue: 142/255, alpha: 1)
-        self.textAlignment = .center
-        self.font = UIFont.systemFont(ofSize: fontSize)
+        self.textColor = color
+        self.textAlignment = textAlignment
+        self.font = UIFont.systemFont(ofSize: size, weight: weight)
         self.numberOfLines = 0
         self.translatesAutoresizingMaskIntoConstraints = false
     }
