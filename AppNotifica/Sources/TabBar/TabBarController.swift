@@ -12,6 +12,7 @@ class TabBarController: UITabBarController{
         super.setViewControllers(viewControllers, animated: animated)
         self.tabBar.tintColor = .mainColor
         self.tabBar.isTranslucent = true
+        self.modalPresentationStyle = .fullScreen
         UITabBar.appearance().barTintColor = .viewBackgroundColor
     }
     

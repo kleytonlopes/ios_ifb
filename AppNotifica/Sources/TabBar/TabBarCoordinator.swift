@@ -28,6 +28,6 @@ class TabBarCoordinator : CoordinatorProtocol {
             animated: true
         )
         
-        self.navigation.pushViewController(viewController, animated: true)
+        self.navigation.present(tabBarviewController, animated: true)
     }
 }
