@@ -25,15 +25,17 @@ class NotificationsListViewController: ViewControllerDefault {
 }
 extension NotificationsListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 40
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: NotificationsListView.CELL_IDENTIFIER, for: indexPath)
-        cell.textLabel?.text = "Notification \(indexPath.row + 1)"
-        return cell
+        if let cell = tableView.dequeueReusableCell(
+                withIdentifier: NotificationCell.IDENTIFIER,
+                for: indexPath) as? NotificationCell {
+            cell.setData(title: "Título da Ocorrência", subtitle: "10/10/2023")
+            return cell
+        }
+        return UITableViewCell()
     }
-    
-    
 }
 

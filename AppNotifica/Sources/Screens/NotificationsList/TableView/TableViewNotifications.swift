@@ -14,6 +14,7 @@ class NotificationsTableView: UITableView {
     }
     
     private func setup(){
+        self.rowHeight = 75
         self.translatesAutoresizingMaskIntoConstraints = false
     }
     

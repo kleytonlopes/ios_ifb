@@ -8,12 +8,11 @@
 import UIKit
 
 class NotificationsListView: UIView {
-    public static let CELL_IDENTIFIER = "NotificationCell";
     
     lazy var tableView: NotificationsTableView = {
         let tableView = NotificationsTableView()
-        tableView.register(UITableViewCell.self,
-                           forCellReuseIdentifier: NotificationsListView.CELL_IDENTIFIER)
+        tableView.register(NotificationCell.self,
+                           forCellReuseIdentifier: NotificationCell.IDENTIFIER)
         return tableView
     }()
     
@@ -43,7 +42,7 @@ extension NotificationsListView: ViewCodeProtocol{
     func setupConstraints() {
         tableView.getAutolayout()
             .sameTopAnchorAsSuperview()
-            .withHeight(300)
+            .sameBottomAnchorAsSuperview()
             .alignToSuperview()
             .activateConstraints()
     }
