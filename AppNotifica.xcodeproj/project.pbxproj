@@ -97,6 +97,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		064F72832B18EC870069A6F7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				305945E22B024EFA006F02BF /* ViewCodeProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		068E42FA2B01BF430031ED28 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,7 +155,6 @@
 				063FA3372B0E447F003F83B4 /* HomeView.swift */,
 				068E43032B01C0120031ED28 /* LoginView.swift */,
 				308B8D242B0B884E00B3F434 /* RegisterView.swift */,
-				305945E22B024EFA006F02BF /* ViewCodeProtocol.swift */,
 				063FA34B2B0E6682003F83B4 /* AboutView.swift */,
 				063FA34D2B0E669A003F83B4 /* AddNotificationView.swift */,
 			);
@@ -182,6 +189,7 @@
 		308121FB2AFBBB680069FCFC /* AppNotifica */ = {
 			isa = PBXGroup;
 			children = (
+				064F72832B18EC870069A6F7 /* Protocols */,
 				063FA34F2B0ED072003F83B4 /* Utils */,
 				308121FC2AFBBB680069FCFC /* AppDelegate.swift */,
 				308121FE2AFBBB680069FCFC /* SceneDelegate.swift */,
