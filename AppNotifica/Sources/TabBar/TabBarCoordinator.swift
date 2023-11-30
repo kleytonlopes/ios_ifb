@@ -15,15 +15,15 @@ class TabBarCoordinator : CoordinatorProtocol {
         self.navigation = navigation
     }
     func start() {
-        let viewController = TabBarController()
-        let notificationsListCoordinator = NotificationsListCoordinator(navigation: navigation)
-        let aboutUsCoordinator = AboutUsCoordinator(navigation: navigation)
-        let addNotificationCoordinator = AddNotificationCoordinator(navigation: navigation)
+        let tabBarviewController = TabBarController()
+        let notificationsListCoordinator = NotificationsListCoordinator()
+        let aboutUsCoordinator = AboutUsCoordinator()
+        let addNotificationCoordinator = AddNotificationCoordinator()
 
-        viewController.setViewControllers(
-            [   notificationsListCoordinator.listViewController,
-                aboutUsCoordinator.aboutUsViewController,
-                addNotificationCoordinator.viewController
+        tabBarviewController.setViewControllers(
+            [   notificationsListCoordinator.navigation,
+                aboutUsCoordinator.navigation,
+                addNotificationCoordinator.navigation
             ],
             animated: true
         )

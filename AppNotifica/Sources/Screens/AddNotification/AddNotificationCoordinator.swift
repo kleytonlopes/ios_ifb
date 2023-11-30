@@ -10,7 +10,7 @@ import UIKit
 class AddNotificationCoordinator : CoordinatorProtocol {
     var navigation: UINavigationController
     
-    lazy var viewController: AddNotificationViewController = {
+    private lazy var viewController: AddNotificationViewController = {
         let viewController = AddNotificationViewController()
         viewController.tabBarItem.title = "Adicionar"
         viewController.tabBarItem.image = UIImage(named: "add-icon")
@@ -18,11 +18,13 @@ class AddNotificationCoordinator : CoordinatorProtocol {
     }()
     
     
-    init(navigation: UINavigationController) {
+    init(
+        navigation: UINavigationController = UINavigationController()
+    ) {
         self.navigation = navigation
+        start()
     }
     func start() {
-        let viewController = AddNotificationViewController()
         self.navigation.pushViewController(viewController, animated: true)
     }
 }

@@ -10,16 +10,20 @@ import UIKit
 class NotificationsListCoordinator : CoordinatorProtocol {
     var navigation: UINavigationController
     
-    lazy var listViewController: NotificationsListViewController = {
+    private lazy var listViewController: NotificationsListViewController = {
         let viewController = NotificationsListViewController()
         viewController.tabBarItem.title = "Home"
         viewController.tabBarItem.image = UIImage(named: "home")
         return viewController
     }()
     
-    init(navigation: UINavigationController) {
+    init(
+        navigation: UINavigationController = UINavigationController()
+    ){
         self.navigation = navigation
+        start()
     }
+    
     func start() {
         self.navigation.pushViewController(listViewController, animated: true)
     }

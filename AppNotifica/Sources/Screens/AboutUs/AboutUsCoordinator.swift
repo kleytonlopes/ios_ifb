@@ -10,17 +10,20 @@ import UIKit
 class AboutUsCoordinator : CoordinatorProtocol {
     var navigation: UINavigationController
     
-    lazy var aboutUsViewController: AboutUsViewController = {
+    private lazy var aboutUsViewController: AboutUsViewController = {
         let viewController = AboutUsViewController()
         viewController.tabBarItem.title = "Sobre"
         viewController.tabBarItem.image = UIImage(named: "about-icon")
         return viewController
     }()
     
-    init(navigation: UINavigationController) {
+    init(
+        navigation: UINavigationController = UINavigationController()
+    ){
         self.navigation = navigation
+        start()
     }
     func start() {
-      
+        self.navigation.pushViewController(aboutUsViewController, animated: true)
     }
 }
