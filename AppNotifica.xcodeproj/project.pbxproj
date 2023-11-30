@@ -92,6 +92,7 @@
 		063FA34F2B0ED072003F83B4 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				06D399732B0A76FA0005A0F4 /* MyAutoLayout.swift */,
 				063FA3502B0ED081003F83B4 /* ImageChooser.swift */,
 			);
 			path = Utils;
@@ -193,14 +194,6 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		06D399722B0A76E00005A0F4 /* Layout */ = {
-			isa = PBXGroup;
-			children = (
-				06D399732B0A76FA0005A0F4 /* MyAutoLayout.swift */,
-			);
-			path = Layout;
-			sourceTree = "<group>";
-		};
 		305945E12B024EDD006F02BF /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,7 +239,6 @@
 				305945E12B024EDD006F02BF /* Views */,
 				068E42FC2B01BF610031ED28 /* Coordinator */,
 				068E42FB2B01BF560031ED28 /* Controllers */,
-				06D399722B0A76E00005A0F4 /* Layout */,
 				068E42FA2B01BF430031ED28 /* Resources */,
 				3081220A2AFBBB6B0069FCFC /* Info.plist */,
 			);
