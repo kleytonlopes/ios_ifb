@@ -21,6 +21,7 @@
 		063FA34E2B0E669A003F83B4 /* AddNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA34D2B0E669A003F83B4 /* AddNotificationView.swift */; };
 		063FA3512B0ED081003F83B4 /* ImageChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FA3502B0ED081003F83B4 /* ImageChooser.swift */; };
 		064F728E2B18FE0F0069A6F7 /* TableViewNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064F728D2B18FE0F0069A6F7 /* TableViewNotifications.swift */; };
+		064F72902B1916030069A6F7 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064F728F2B1916030069A6F7 /* NotificationCell.swift */; };
 		068332C62B0979F700E0FFEB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068332C52B0979F700E0FFEB /* UIView+Extension.swift */; };
 		068E42FE2B01BF780031ED28 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068E42FD2B01BF780031ED28 /* CoordinatorProtocol.swift */; };
 		068E43002B01BF860031ED28 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068E42FF2B01BF860031ED28 /* LoginCoordinator.swift */; };
@@ -57,6 +58,7 @@
 		063FA34D2B0E669A003F83B4 /* AddNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNotificationView.swift; sourceTree = "<group>"; };
 		063FA3502B0ED081003F83B4 /* ImageChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageChooser.swift; sourceTree = "<group>"; };
 		064F728D2B18FE0F0069A6F7 /* TableViewNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewNotifications.swift; sourceTree = "<group>"; };
+		064F728F2B1916030069A6F7 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		068332C52B0979F700E0FFEB /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		068E42FD2B01BF780031ED28 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		068E42FF2B01BF860031ED28 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				064F728D2B18FE0F0069A6F7 /* TableViewNotifications.swift */,
+				064F728F2B1916030069A6F7 /* NotificationCell.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				308B8D272B0B908400B3F434 /* RegisterCoordinator.swift in Sources */,
 				308121FF2AFBBB680069FCFC /* SceneDelegate.swift in Sources */,
 				064F728E2B18FE0F0069A6F7 /* TableViewNotifications.swift in Sources */,
+				064F72902B1916030069A6F7 /* NotificationCell.swift in Sources */,
 				063FA3512B0ED081003F83B4 /* ImageChooser.swift in Sources */,
 				308B8D252B0B884E00B3F434 /* RegisterView.swift in Sources */,
 				063FA33A2B0E467F003F83B4 /* NotificationsListCoordinator.swift in Sources */,
