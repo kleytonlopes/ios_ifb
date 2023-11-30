@@ -168,6 +168,22 @@
 			path = AddNotification;
 			sourceTree = "<group>";
 		};
+		064F728A2B18F12F0069A6F7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				308121FC2AFBBB680069FCFC /* AppDelegate.swift */,
+				308121FE2AFBBB680069FCFC /* SceneDelegate.swift */,
+				064F72842B18EDB30069A6F7 /* Screens */,
+				064F72832B18EC870069A6F7 /* Protocols */,
+				068E42FC2B01BF610031ED28 /* Coordinator */,
+				068E42FB2B01BF560031ED28 /* Controllers */,
+				309455972B07A540000A3BA8 /* ReusableComponents */,
+				305945E42B0269D6006F02BF /* Extensions */,
+				063FA34F2B0ED072003F83B4 /* Utils */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		068E42FA2B01BF430031ED28 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,13 +208,6 @@
 				063FA3452B0E653A003F83B4 /* TabBarCoordinator.swift */,
 			);
 			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		305945E12B024EDD006F02BF /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		305945E42B0269D6006F02BF /* Extensions */ = {
@@ -229,16 +238,7 @@
 		308121FB2AFBBB680069FCFC /* AppNotifica */ = {
 			isa = PBXGroup;
 			children = (
-				064F72842B18EDB30069A6F7 /* Screens */,
-				064F72832B18EC870069A6F7 /* Protocols */,
-				063FA34F2B0ED072003F83B4 /* Utils */,
-				308121FC2AFBBB680069FCFC /* AppDelegate.swift */,
-				308121FE2AFBBB680069FCFC /* SceneDelegate.swift */,
-				309455972B07A540000A3BA8 /* ReusableComponents */,
-				305945E42B0269D6006F02BF /* Extensions */,
-				305945E12B024EDD006F02BF /* Views */,
-				068E42FC2B01BF610031ED28 /* Coordinator */,
-				068E42FB2B01BF560031ED28 /* Controllers */,
+				064F728A2B18F12F0069A6F7 /* Sources */,
 				068E42FA2B01BF430031ED28 /* Resources */,
 				3081220A2AFBBB6B0069FCFC /* Info.plist */,
 			);
