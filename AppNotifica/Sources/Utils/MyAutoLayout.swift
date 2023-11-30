@@ -26,6 +26,13 @@ class MyAutoLayout {
         return self
     }
     
+    func sameBottomAnchor(as view: UIView,_ constant: CGFloat = 0) -> MyAutoLayout {
+        self.constraints.append(
+            self.view.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: constant)
+        )
+        return self
+    }
+    
     func sameLeadingAnchor(as view: UIView,_ constant: CGFloat = 0) -> MyAutoLayout {
         self.constraints.append(
             self.view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: constant)
@@ -46,6 +53,14 @@ class MyAutoLayout {
             return self
         }
         return self.sameTopAnchor(as: superview, constant)
+
+    }
+    
+    func sameBottomAnchorAsSuperview(_ constant: CGFloat = 0) -> MyAutoLayout{
+        guard let superview = self.view.superview else {
+            return self
+        }
+        return self.sameBottomAnchor(as: superview, constant)
 
     }
     
@@ -83,11 +98,25 @@ class MyAutoLayout {
         return self
     }
     
+    func centerY(to view: UIView) -> MyAutoLayout {
+        self.constraints.append(
+            self.view.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        )
+        return self
+    }
+    
     func centerXToSuperview() -> MyAutoLayout {
         guard let superview = self.view.superview else {
             return self
         }
         return self.centerX(to: superview)
+    }
+    
+    func centerYToSuperview() -> MyAutoLayout {
+        guard let superview = self.view.superview else {
+            return self
+        }
+        return self.centerY(to: superview)
     }
     
     func withWidth(_ constant: CGFloat) -> MyAutoLayout{
@@ -107,6 +136,13 @@ class MyAutoLayout {
     func below(view: UIView,_ constant: CGFloat = 0) -> MyAutoLayout {
         self.constraints.append(
             self.view.topAnchor.constraint(equalTo: view.bottomAnchor, constant: constant)
+        )
+        return self
+    }
+    
+    func after(_ view: UIView,_ constant: CGFloat = 0) -> MyAutoLayout {
+        self.constraints.append(
+            self.view.leadingAnchor.constraint(equalTo: view.trailingAnchor, constant: constant)
         )
         return self
     }
