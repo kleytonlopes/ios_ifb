@@ -105,6 +105,68 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		064F72842B18EDB30069A6F7 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				064F72852B18EDBD0069A6F7 /* Login */,
+				064F72862B18EDCA0069A6F7 /* Register */,
+				064F72882B18EE150069A6F7 /* NotificationsList */,
+				064F72892B18EE2F0069A6F7 /* AddNotification */,
+				064F72872B18EDD40069A6F7 /* AboutUs */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		064F72852B18EDBD0069A6F7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				068E43032B01C0120031ED28 /* LoginView.swift */,
+				068E43012B01C0040031ED28 /* LoginViewController.swift */,
+				068E42FF2B01BF860031ED28 /* LoginCoordinator.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		064F72862B18EDCA0069A6F7 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				308B8D242B0B884E00B3F434 /* RegisterView.swift */,
+				308B8D222B0B87FD00B3F434 /* RegisterViewController.swift */,
+				308B8D262B0B908400B3F434 /* RegisterCoordinator.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		064F72872B18EDD40069A6F7 /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				063FA34B2B0E6682003F83B4 /* AboutView.swift */,
+				063FA3412B0E6427003F83B4 /* AboutViewController.swift */,
+				063FA3492B0E6571003F83B4 /* AboutCoordinator.swift */,
+			);
+			path = AboutUs;
+			sourceTree = "<group>";
+		};
+		064F72882B18EE150069A6F7 /* NotificationsList */ = {
+			isa = PBXGroup;
+			children = (
+				063FA3372B0E447F003F83B4 /* HomeView.swift */,
+				063FA3352B0E4463003F83B4 /* HomeViewController.swift */,
+				063FA3392B0E467F003F83B4 /* HomeCoordinator.swift */,
+			);
+			path = NotificationsList;
+			sourceTree = "<group>";
+		};
+		064F72892B18EE2F0069A6F7 /* AddNotification */ = {
+			isa = PBXGroup;
+			children = (
+				063FA34D2B0E669A003F83B4 /* AddNotificationView.swift */,
+				063FA3432B0E6442003F83B4 /* AddNotificationViewController.swift */,
+				063FA3472B0E6551003F83B4 /* AddNotificationCoordinator.swift */,
+			);
+			path = AddNotification;
+			sourceTree = "<group>";
+		};
 		068E42FA2B01BF430031ED28 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,11 +180,6 @@
 			isa = PBXGroup;
 			children = (
 				063FA33F2B0E63F0003F83B4 /* TabBarController.swift */,
-				063FA3412B0E6427003F83B4 /* AboutViewController.swift */,
-				063FA3432B0E6442003F83B4 /* AddNotificationViewController.swift */,
-				063FA3352B0E4463003F83B4 /* HomeViewController.swift */,
-				068E43012B01C0040031ED28 /* LoginViewController.swift */,
-				308B8D222B0B87FD00B3F434 /* RegisterViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -131,12 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				068E42FD2B01BF780031ED28 /* Coordinator.swift */,
-				068E42FF2B01BF860031ED28 /* LoginCoordinator.swift */,
-				308B8D262B0B908400B3F434 /* RegisterCoordinator.swift */,
-				063FA3392B0E467F003F83B4 /* HomeCoordinator.swift */,
 				063FA3452B0E653A003F83B4 /* TabBarCoordinator.swift */,
-				063FA3472B0E6551003F83B4 /* AddNotificationCoordinator.swift */,
-				063FA3492B0E6571003F83B4 /* AboutCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -152,11 +204,6 @@
 		305945E12B024EDD006F02BF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				063FA3372B0E447F003F83B4 /* HomeView.swift */,
-				068E43032B01C0120031ED28 /* LoginView.swift */,
-				308B8D242B0B884E00B3F434 /* RegisterView.swift */,
-				063FA34B2B0E6682003F83B4 /* AboutView.swift */,
-				063FA34D2B0E669A003F83B4 /* AddNotificationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,6 +236,7 @@
 		308121FB2AFBBB680069FCFC /* AppNotifica */ = {
 			isa = PBXGroup;
 			children = (
+				064F72842B18EDB30069A6F7 /* Screens */,
 				064F72832B18EC870069A6F7 /* Protocols */,
 				063FA34F2B0ED072003F83B4 /* Utils */,
 				308121FC2AFBBB680069FCFC /* AppDelegate.swift */,
