@@ -49,7 +49,7 @@ class LoginView: UIView {
     
 }
 
-extension LoginView: ViewCode{
+extension LoginView: ViewCodeProtocol{
     func setupHierarchy() {
         self.addSubview(imageViewLogo)
         self.addSubview(labelUnderImage)

@@ -55,7 +55,7 @@ class AddNotificationView : UIView {
     
 }
 
-extension AddNotificationView: ViewCode{
+extension AddNotificationView: ViewCodeProtocol{
     func setupHierarchy() {
         self.addSubview(imageViewContainerCamera)
         self.imageViewContainerCamera.addSubview(imageViewCameraIcon)

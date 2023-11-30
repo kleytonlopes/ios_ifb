@@ -50,7 +50,7 @@ class RegisterView: UIView {
 
 }
 
-extension RegisterView: ViewCode {
+extension RegisterView: ViewCodeProtocol {
     func setupHierarchy() {
         self.addSubview(labelHelp)
         self.addSubview(textFieldUsername)

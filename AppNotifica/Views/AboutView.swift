@@ -20,7 +20,7 @@ class AboutView: UIView {
     
 }
 
-extension AboutView: ViewCode{
+extension AboutView: ViewCodeProtocol{
     func setupHierarchy() {
     }
     

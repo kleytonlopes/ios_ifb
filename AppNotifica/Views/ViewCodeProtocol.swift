@@ -7,13 +7,13 @@
 
 import Foundation
 
-protocol ViewCode {
+protocol ViewCodeProtocol {
     func setupHierarchy()
     func setupConstraints()
     func setupStyle()
 }
 
-extension ViewCode {
+extension ViewCodeProtocol {
     func setup(){
         setupHierarchy()
         setupConstraints()
