@@ -175,9 +175,8 @@
 				308121FC2AFBBB680069FCFC /* AppDelegate.swift */,
 				308121FE2AFBBB680069FCFC /* SceneDelegate.swift */,
 				064F72842B18EDB30069A6F7 /* Screens */,
+				068E42FB2B01BF560031ED28 /* TabBar */,
 				064F72832B18EC870069A6F7 /* Protocols */,
-				068E42FC2B01BF610031ED28 /* Coordinator */,
-				068E42FB2B01BF560031ED28 /* Controllers */,
 				309455972B07A540000A3BA8 /* ReusableComponents */,
 				305945E42B0269D6006F02BF /* Extensions */,
 				063FA34F2B0ED072003F83B4 /* Utils */,
@@ -194,20 +193,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		068E42FB2B01BF560031ED28 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				063FA33F2B0E63F0003F83B4 /* TabBarController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		068E42FC2B01BF610031ED28 /* Coordinator */ = {
+		068E42FB2B01BF560031ED28 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
 				063FA3452B0E653A003F83B4 /* TabBarCoordinator.swift */,
+				063FA33F2B0E63F0003F83B4 /* TabBarController.swift */,
 			);
-			path = Coordinator;
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		305945E42B0269D6006F02BF /* Extensions */ = {
