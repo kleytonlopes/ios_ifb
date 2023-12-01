@@ -23,6 +23,7 @@
 		064F728E2B18FE0F0069A6F7 /* TableViewNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064F728D2B18FE0F0069A6F7 /* TableViewNotifications.swift */; };
 		064F72902B1916030069A6F7 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064F728F2B1916030069A6F7 /* NotificationCell.swift */; };
 		064F72922B1961C10069A6F7 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064F72912B1961C10069A6F7 /* String+Extension.swift */; };
+		064F72942B1964D50069A6F7 /* Array<String>+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064F72932B1964D50069A6F7 /* Array<String>+Extension.swift */; };
 		068332C62B0979F700E0FFEB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068332C52B0979F700E0FFEB /* UIView+Extension.swift */; };
 		068E42FE2B01BF780031ED28 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068E42FD2B01BF780031ED28 /* CoordinatorProtocol.swift */; };
 		068E43002B01BF860031ED28 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068E42FF2B01BF860031ED28 /* LoginCoordinator.swift */; };
@@ -61,6 +62,7 @@
 		064F728D2B18FE0F0069A6F7 /* TableViewNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewNotifications.swift; sourceTree = "<group>"; };
 		064F728F2B1916030069A6F7 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		064F72912B1961C10069A6F7 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		064F72932B1964D50069A6F7 /* Array<String>+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array<String>+Extension.swift"; sourceTree = "<group>"; };
 		068332C52B0979F700E0FFEB /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		068E42FD2B01BF780031ED28 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		068E42FF2B01BF860031ED28 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				305945E52B0269F1006F02BF /* UIColor+Extension.swift */,
 				068332C52B0979F700E0FFEB /* UIView+Extension.swift */,
 				064F72912B1961C10069A6F7 /* String+Extension.swift */,
+				064F72932B1964D50069A6F7 /* Array<String>+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				063FA34E2B0E669A003F83B4 /* AddNotificationView.swift in Sources */,
 				063FA3362B0E4463003F83B4 /* NotificationsListViewController.swift in Sources */,
 				3094559D2B07AA1E000A3BA8 /* ButtonDefault.swift in Sources */,
+				064F72942B1964D50069A6F7 /* Array<String>+Extension.swift in Sources */,
 				308B8D232B0B87FD00B3F434 /* RegisterViewController.swift in Sources */,
 				305945E32B024EFA006F02BF /* ViewCodeProtocol.swift in Sources */,
 				068E43002B01BF860031ED28 /* LoginCoordinator.swift in Sources */,
