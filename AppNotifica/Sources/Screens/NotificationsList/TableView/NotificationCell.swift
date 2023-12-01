@@ -34,7 +34,7 @@ class NotificationCell: UITableViewCell {
     
     public func setData(title: String, subtitle: String){
         self.labelTitle.text = title
-        self.labelSubTitle.text = title
+        self.labelSubTitle.text = subtitle
     }
     
     required init?(coder: NSCoder) {
