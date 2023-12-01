@@ -7,8 +7,6 @@
 
 import UIKit
 
-class NotificationsListViewController: ViewControllerDefault {    
-    lazy var listView: NotificationsListView = {
 class NotificationsListViewController: ViewControllerDefault {
     private let notifications: [(title: String, subtitle: String)] = [
         ("Título da Ocorrência 1", "10/10/2023"),
@@ -32,12 +30,22 @@ class NotificationsListViewController: ViewControllerDefault {
         return listView
     }()
     
+    private lazy var searchController : UISearchController = {
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.tintColor = UIColor.mainColor
+        return searchController
+    }()
+
+    
     override func loadView() {
         self.view = listView
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.searchController = searchController
+        self.navigationItem.hidesSearchBarWhenScrolling = false
         self.title = "Ocorrências"
         filteredNotifications = notifications
     }
@@ -56,6 +64,19 @@ extension NotificationsListViewController: UITableViewDataSource {
             return cell
         }
         return UITableViewCell()
+    }
+}
+
+extension NotificationsListViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        let currentText = searchController.searchBar.text?.lowercased() ?? ""
+        self.filteredNotifications = notifications
+        if(currentText.trimmingCharacters(in: [" "]) != ""){
+            self.filteredNotifications = self.notifications.filter{
+                [$0.title, $0.subtitle].someStringContains(currentText)
+            }
+        }
+        self.listView.reloadDataTableView()
     }
 }
 
