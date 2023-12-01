@@ -20,7 +20,7 @@ class NotificationCell: UITableViewCell {
         fontSize: 18,
         fontWeight: .bold,
         textAlignment: .left,
-        color: UIColor.textColor2
+        color: UIColor.textColorStrong
     )
     
     lazy var labelSubTitle = LabelDefault(
