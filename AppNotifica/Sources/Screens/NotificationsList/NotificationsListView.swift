@@ -9,10 +9,12 @@ import UIKit
 
 class NotificationsListView: UIView {
     
-    lazy var tableView: NotificationsTableView = {
-        let tableView = NotificationsTableView()
+    lazy var tableView: UITableView = {
+        let tableView = UITableView()
         tableView.register(NotificationCell.self,
                            forCellReuseIdentifier: NotificationCell.IDENTIFIER)
+        tableView.rowHeight = 75
+        tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
     
