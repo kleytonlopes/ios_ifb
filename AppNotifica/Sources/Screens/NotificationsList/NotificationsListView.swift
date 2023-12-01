@@ -28,6 +28,10 @@ class NotificationsListView: UIView {
         setup()
     }
     
+    public func reloadDataTableView(){
+        self.tableView.reloadData()
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
