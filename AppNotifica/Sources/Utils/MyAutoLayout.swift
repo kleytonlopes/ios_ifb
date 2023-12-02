@@ -20,31 +20,48 @@ class MyAutoLayout {
     }
     
     func sameTopAnchor(as view: UIView,_ constant: CGFloat = 0) -> MyAutoLayout {
+        return self.sameTopAnchor(as: view.safeAreaLayoutGuide, constant)
+    }
+    
+    func sameTopAnchor(as layoutGuide: UILayoutGuide,_ constant: CGFloat = 0) -> MyAutoLayout {
         self.constraints.append(
-            self.view.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: constant)
+            self.view.topAnchor.constraint(equalTo: layoutGuide.topAnchor, constant: constant)
+        )
+        return self
+    }
+    
+    
+    func sameBottomAnchor(as layoutGuide: UILayoutGuide,_ constant: CGFloat = 0) -> MyAutoLayout {
+        self.constraints.append(
+            self.view.bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor, constant: constant)
         )
         return self
     }
     
     func sameBottomAnchor(as view: UIView,_ constant: CGFloat = 0) -> MyAutoLayout {
+        return self.sameBottomAnchor(as: view.safeAreaLayoutGuide, constant)
+    }
+    
+    func sameLeadingAnchor(as layoutGuide: UILayoutGuide, _ constant: CGFloat = 0) -> MyAutoLayout {
         self.constraints.append(
-            self.view.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: constant)
+            self.view.leadingAnchor.constraint(equalTo: layoutGuide.leadingAnchor, constant: constant)
         )
         return self
     }
     
     func sameLeadingAnchor(as view: UIView,_ constant: CGFloat = 0) -> MyAutoLayout {
+        return self.sameLeadingAnchor(as: view.safeAreaLayoutGuide, constant)
+    }
+    
+    func sameTrailingAnchor(as layoutGuide: UILayoutGuide,_ constant: CGFloat = 0) -> MyAutoLayout {
         self.constraints.append(
-            self.view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: constant)
+            self.view.trailingAnchor.constraint(equalTo: layoutGuide.trailingAnchor, constant: constant * -1.0)
         )
         return self
     }
     
     func sameTrailingAnchor(as view: UIView,_ constant: CGFloat = 0) -> MyAutoLayout {
-        self.constraints.append(
-            self.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: constant * -1.0)
-        )
-        return self
+        return self.sameTrailingAnchor(as: view.safeAreaLayoutGuide, constant)
     }
     
     
@@ -92,8 +109,12 @@ class MyAutoLayout {
     }
     
     func centerX(to view: UIView) -> MyAutoLayout {
+        return self.centerX(to: view.safeAreaLayoutGuide)
+    }
+    
+    func centerX(to layoutGuide: UILayoutGuide) -> MyAutoLayout {
         self.constraints.append(
-            self.view.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            self.view.centerXAnchor.constraint(equalTo: layoutGuide.centerXAnchor)
         )
         return self
     }
@@ -129,6 +150,20 @@ class MyAutoLayout {
     func withHeight(_ constant: CGFloat) -> MyAutoLayout{
         self.constraints.append(
             self.view.heightAnchor.constraint(equalToConstant: constant)
+        )
+        return self
+    }
+    
+    func sameWidth(as view: UIView, multiplier: CGFloat = 1) -> MyAutoLayout{
+        self.constraints.append(
+            self.view.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor, multiplier: multiplier)
+        )
+        return self
+    }
+    
+    func sameHeight(as view: UIView) -> MyAutoLayout{
+        self.constraints.append(
+            self.view.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor)
         )
         return self
     }
