@@ -22,8 +22,8 @@ class TabBarCoordinator : CoordinatorProtocol {
 
         tabBarviewController.setViewControllers(
             [   notificationsListCoordinator.navigation,
+                addNotificationCoordinator.navigation,
                 aboutUsCoordinator.navigation,
-                addNotificationCoordinator.navigation
             ],
             animated: true
         )
