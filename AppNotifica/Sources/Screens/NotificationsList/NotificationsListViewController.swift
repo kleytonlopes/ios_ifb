@@ -8,21 +8,9 @@
 import UIKit
 
 class NotificationsListViewController: ViewControllerDefault {
-    private let notifications: [(title: String, subtitle: String)] = [
-        ("Título da Ocorrência 1", "10/10/2023"),
-        ("Título da Ocorrência 2", "11/10/2023"),
-        ("Título da Ocorrência 3", "12/10/2023"),
-        ("Título da Ocorrência 4", "13/10/2023"),
-        ("Título da Ocorrência 5", "14/10/2023"),
-        ("Título da Ocorrência 6", "15/10/2023"),
-        ("Título da Ocorrência 7", "16/10/2023"),
-        ("Título da Ocorrência 8", "17/10/2023"),
-        ("Título da Ocorrência 9", "18/10/2023"),
-        ("Título da Ocorrência 10", "20/10/2023"),
-
-    ]
-    
-    private var filteredNotifications: [(title: String, subtitle: String)] = []
+    private var viewModel: NotificationsListViewModel
+    private var allNotifications: [Notification] = []
+    private var filteredNotifications: [Notification] = []
     
     private lazy var listView: NotificationsListView = {
         let listView = NotificationsListView()
@@ -42,12 +30,32 @@ class NotificationsListViewController: ViewControllerDefault {
         self.view = listView
     }
     
+    init(viewModel: NotificationsListViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.searchController = searchController
         self.navigationItem.hidesSearchBarWhenScrolling = false
         self.title = "Ocorrências"
-        filteredNotifications = notifications
+        self.setupBindings()
+        self.viewModel.fetchData()
+    }
+    
+    private func setupBindings(){
+        viewModel.downloadDataSuccess = { notifications in
+            self.allNotifications = notifications
+            self.filteredNotifications = notifications
+        }
+        viewModel.errorStateChanged = { message in
+            //TODO: show alert
+        }
     }
 }
 extension NotificationsListViewController: UITableViewDataSource {
@@ -70,9 +78,9 @@ extension NotificationsListViewController: UITableViewDataSource {
 extension NotificationsListViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         let currentText = searchController.searchBar.text?.lowercased() ?? ""
-        self.filteredNotifications = notifications
+        self.filteredNotifications = allNotifications
         if(currentText.trimmingCharacters(in: [" "]) != ""){
-            self.filteredNotifications = self.notifications.filter{
+            self.filteredNotifications = self.allNotifications.filter{
                 [$0.title, $0.subtitle].someStringContains(currentText)
             }
         }

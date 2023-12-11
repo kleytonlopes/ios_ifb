@@ -39,6 +39,7 @@
 		308B8D232B0B87FD00B3F434 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B8D222B0B87FD00B3F434 /* RegisterViewController.swift */; };
 		308B8D252B0B884E00B3F434 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B8D242B0B884E00B3F434 /* RegisterView.swift */; };
 		308B8D272B0B908400B3F434 /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B8D262B0B908400B3F434 /* RegisterCoordinator.swift */; };
+		308BDE3D2B273BE700CA3F24 /* NotificationsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308BDE3C2B273BE700CA3F24 /* NotificationsListViewModel.swift */; };
 		309455992B07A5A0000A3BA8 /* ImageViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309455982B07A5A0000A3BA8 /* ImageViewDefault.swift */; };
 		3094559B2B07A874000A3BA8 /* TextFieldDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3094559A2B07A874000A3BA8 /* TextFieldDefault.swift */; };
 		3094559D2B07AA1E000A3BA8 /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3094559C2B07AA1E000A3BA8 /* ButtonDefault.swift */; };
@@ -80,6 +81,7 @@
 		308B8D222B0B87FD00B3F434 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		308B8D242B0B884E00B3F434 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		308B8D262B0B908400B3F434 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
+		308BDE3C2B273BE700CA3F24 /* NotificationsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsListViewModel.swift; sourceTree = "<group>"; };
 		309455982B07A5A0000A3BA8 /* ImageViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewDefault.swift; sourceTree = "<group>"; };
 		3094559A2B07A874000A3BA8 /* TextFieldDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDefault.swift; sourceTree = "<group>"; };
 		3094559C2B07AA1E000A3BA8 /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				063FA3372B0E447F003F83B4 /* NotificationsListView.swift */,
+				308BDE3C2B273BE700CA3F24 /* NotificationsListViewModel.swift */,
 				063FA3352B0E4463003F83B4 /* NotificationsListViewController.swift */,
 				063FA3392B0E467F003F83B4 /* NotificationsListCoordinator.swift */,
 			);
@@ -344,6 +347,7 @@
 				063FA3402B0E63F0003F83B4 /* TabBarController.swift in Sources */,
 				063FA3462B0E653A003F83B4 /* TabBarCoordinator.swift in Sources */,
 				068E43042B01C0120031ED28 /* LoginView.swift in Sources */,
+				308BDE3D2B273BE700CA3F24 /* NotificationsListViewModel.swift in Sources */,
 				3094559F2B07AB3A000A3BA8 /* LabelDefault.swift in Sources */,
 				063FA3442B0E6442003F83B4 /* AddNotificationViewController.swift in Sources */,
 				063FA34C2B0E6682003F83B4 /* AboutUsView.swift in Sources */,
