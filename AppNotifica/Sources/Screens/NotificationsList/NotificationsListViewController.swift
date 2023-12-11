@@ -54,7 +54,7 @@ class NotificationsListViewController: ViewControllerDefault {
             self.filteredNotifications = notifications
         }
         viewModel.errorStateChanged = { message in
-            //TODO: show alert
+            self.showAlertMessage(title: "Error", message: message?.description ?? "Erro Inesperado!")
         }
     }
 }

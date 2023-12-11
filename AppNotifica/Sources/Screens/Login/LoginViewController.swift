@@ -46,7 +46,7 @@ class LoginViewController: ViewControllerDefault {
             self.onLoginSuccess?(user)
         }
         viewModel.errorStateChanged = { message in
-            //TODO: show alert
+            self.showAlertMessage(title: "Error", message: message?.description ?? "Erro Inesperado!")
         }
     }
     
