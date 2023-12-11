@@ -7,15 +7,6 @@
 
 import UIKit
 
-enum Error: Swift.Error {
-    case noInternet
-    case invalidPassword
-    case invalidUsername
-}
-struct User {
-    var name: String
-    var email: String
-}
 class LoginViewModel {
     private var notificationService: NotificationsServiceProtocol
     private var currentError: Error? {

@@ -7,10 +7,6 @@
 
 import UIKit
 
-struct Notification {
-    var title: String
-    var subtitle: String
-}
 class NotificationsListViewModel {
     private var notificationService: NotificationsServiceProtocol
     private var currentError: Error? {
