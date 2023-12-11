@@ -14,12 +14,13 @@ class LoginCoordinator : CoordinatorProtocol {
         self.navigation = navigation
     }
     func start() {
-        let loginViewController = LoginViewController()
+        let viewModel = LoginViewModel()
+        let loginViewController = LoginViewController(viewModel: viewModel)
         loginViewController.onRegisterTap = {
             self.goToRegisterTap()
         }
-        loginViewController.onLoginTap = {
-            self.goToLoginTap()
+        loginViewController.onLoginSuccess = { user in
+            self.goToLoginTap(user: user)
         }
         self.navigation.pushViewController(loginViewController, animated: true)
     }
@@ -29,7 +30,8 @@ class LoginCoordinator : CoordinatorProtocol {
         coordinator.start()
     }
     
-    private func goToLoginTap() {
+    private func goToLoginTap(user: User) {
+        //TODO: user must be utilized
         let coordinator = TabBarCoordinator(navigation: navigation)
         coordinator.start()
     }

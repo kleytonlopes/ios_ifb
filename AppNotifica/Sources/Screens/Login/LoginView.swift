@@ -9,7 +9,7 @@ import UIKit
 
 class LoginView: UIView {
     var onRegisterTap: (() -> Void)?
-    var onLoginTap: (() -> Void)?
+    var onLoginTap: ((_ username: String,_ password: String) -> Void)?
     
     private lazy var imageViewLogo = ImageViewDefault(imageName: "logo-login")
     
@@ -44,7 +44,10 @@ class LoginView: UIView {
     }
     
     @objc private func loginTap(){
-        onLoginTap?()
+        onLoginTap?(
+            self.textFieldUsername.text ?? "",
+            self.textFieldPassword.text ?? ""
+        )
     }
     
 }
