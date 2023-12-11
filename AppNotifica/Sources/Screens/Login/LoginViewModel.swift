@@ -29,7 +29,10 @@ class LoginViewModel {
     var errorStateChanged: ((String?) -> Void)?
     var loginSuccess: ((_ user: User) -> Void)?
     func makeLogin(username: String, password: String){
-        notificationService.makeLogin { user in
+        notificationService.makeLogin { user, error in
+            if let error = error {
+                self.currentError = error
+            }
             self.currentUser = user
         }
     }

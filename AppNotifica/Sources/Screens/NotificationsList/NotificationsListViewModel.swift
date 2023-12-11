@@ -29,7 +29,10 @@ class NotificationsListViewModel {
     var errorStateChanged: ((String?) -> Void)?
     var downloadDataSuccess: ((_ notifications: [Notification]) -> Void)?
     func fetchData(){
-        notificationService.downloadData { array in
+        notificationService.downloadData { array, error  in
+            if let error = error {
+                self.currentError = error
+            }
             self.notifications = array
         }
     }

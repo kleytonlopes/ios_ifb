@@ -15,7 +15,7 @@ class NotificationsService {
 }
 
 extension NotificationsService: NotificationsServiceProtocol{
-    func downloadData(completion: @escaping (_ array: [Notification]) -> Void){
+    func downloadData(completion: @escaping (_ array: [Notification], _ error: Error?) -> Void){
         completion([
                       Notification(title: "Título da Ocorrência 1", subtitle: "10/10/2023"),
                       Notification(title: "Título da Ocorrência 2", subtitle: "09/10/2023"),
@@ -26,12 +26,13 @@ extension NotificationsService: NotificationsServiceProtocol{
                       Notification(title: "Título da Ocorrência 7", subtitle: "10/06/2023"),
                       Notification(title: "Título da Ocorrência 8", subtitle: "10/05/2023"),
                       Notification(title: "Título da Ocorrência 9", subtitle: "09/05/2023"),
-                      Notification(title: "Título da Ocorrência 10", subtitle: "01/04/2023"),
-                    ]
+                      Notification(title: "Título da Ocorrência 10", subtitle: "01/04/2023")
+                    ],
+                   nil
         )
     }
     
-    func makeLogin(completion: @escaping (_ data: User) -> Void){
-        completion(User(name: "Test Name", email: "test@email.com"))
+    func makeLogin(completion: @escaping (_ data: User?, _ error: Error?) -> Void){
+        completion(User(name: "Test Name", email: "test@email.com"), nil)
     }
 }

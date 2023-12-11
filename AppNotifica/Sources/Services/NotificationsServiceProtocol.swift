@@ -8,6 +8,6 @@
 import Foundation
 
 protocol NotificationsServiceProtocol{
-    func downloadData(completion: @escaping (_ array: [Notification]) -> Void)
-    func makeLogin(completion: @escaping (_ data: User) -> Void)
+    func downloadData(completion: @escaping (_ array: [Notification],_ error: Error?) -> Void)
+    func makeLogin(completion: @escaping (_ data: User?,_ error: Error?) -> Void)
 }
