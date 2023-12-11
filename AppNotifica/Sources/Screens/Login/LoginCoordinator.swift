@@ -14,7 +14,7 @@ class LoginCoordinator : CoordinatorProtocol {
         self.navigation = navigation
     }
     func start() {
-        let viewModel = LoginViewModel()
+        let viewModel = LoginViewModel(service: NotificationsService.shared)
         let loginViewController = LoginViewController(viewModel: viewModel)
         loginViewController.onRegisterTap = {
             self.goToRegisterTap()

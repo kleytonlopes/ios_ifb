@@ -17,6 +17,7 @@ struct User {
     var email: String
 }
 class LoginViewModel {
+    private var notificationService: NotificationsServiceProtocol
     private var currentError: Error? {
         didSet{
             self.errorStateChanged?(currentError?.localizedDescription)
@@ -30,11 +31,16 @@ class LoginViewModel {
         }
     }
     
+    init (service: NotificationsServiceProtocol){
+        self.notificationService = service
+    }
+    
     var errorStateChanged: ((String?) -> Void)?
     var loginSuccess: ((_ user: User) -> Void)?
     func makeLogin(username: String, password: String){
-        //TODO: login Service call
-        self.currentUser = User(name: "Test Name", email: "test@email.com")
+        notificationService.makeLogin { user in
+            self.currentUser = user
+        }
     }
 
 }

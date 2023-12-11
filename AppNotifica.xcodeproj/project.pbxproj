@@ -40,6 +40,8 @@
 		308B8D252B0B884E00B3F434 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B8D242B0B884E00B3F434 /* RegisterView.swift */; };
 		308B8D272B0B908400B3F434 /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B8D262B0B908400B3F434 /* RegisterCoordinator.swift */; };
 		308BDE3D2B273BE700CA3F24 /* NotificationsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308BDE3C2B273BE700CA3F24 /* NotificationsListViewModel.swift */; };
+		308BDE402B2741C700CA3F24 /* NotificationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308BDE3F2B2741C700CA3F24 /* NotificationsService.swift */; };
+		308BDE422B27490900CA3F24 /* NotificationsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308BDE412B27490900CA3F24 /* NotificationsServiceProtocol.swift */; };
 		309455992B07A5A0000A3BA8 /* ImageViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309455982B07A5A0000A3BA8 /* ImageViewDefault.swift */; };
 		3094559B2B07A874000A3BA8 /* TextFieldDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3094559A2B07A874000A3BA8 /* TextFieldDefault.swift */; };
 		3094559D2B07AA1E000A3BA8 /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3094559C2B07AA1E000A3BA8 /* ButtonDefault.swift */; };
@@ -82,6 +84,8 @@
 		308B8D242B0B884E00B3F434 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		308B8D262B0B908400B3F434 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
 		308BDE3C2B273BE700CA3F24 /* NotificationsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsListViewModel.swift; sourceTree = "<group>"; };
+		308BDE3F2B2741C700CA3F24 /* NotificationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsService.swift; sourceTree = "<group>"; };
+		308BDE412B27490900CA3F24 /* NotificationsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsServiceProtocol.swift; sourceTree = "<group>"; };
 		309455982B07A5A0000A3BA8 /* ImageViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewDefault.swift; sourceTree = "<group>"; };
 		3094559A2B07A874000A3BA8 /* TextFieldDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDefault.swift; sourceTree = "<group>"; };
 		3094559C2B07AA1E000A3BA8 /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
@@ -187,6 +191,7 @@
 				308121FC2AFBBB680069FCFC /* AppDelegate.swift */,
 				308121FE2AFBBB680069FCFC /* SceneDelegate.swift */,
 				064F72842B18EDB30069A6F7 /* Screens */,
+				308BDE3E2B2741A500CA3F24 /* Services */,
 				068E42FB2B01BF560031ED28 /* TabBar */,
 				064F72832B18EC870069A6F7 /* Protocols */,
 				309455972B07A540000A3BA8 /* ReusableComponents */,
@@ -257,6 +262,15 @@
 				3081220A2AFBBB6B0069FCFC /* Info.plist */,
 			);
 			path = AppNotifica;
+			sourceTree = "<group>";
+		};
+		308BDE3E2B2741A500CA3F24 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				308BDE3F2B2741C700CA3F24 /* NotificationsService.swift */,
+				308BDE412B27490900CA3F24 /* NotificationsServiceProtocol.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		309455972B07A540000A3BA8 /* ReusableComponents */ = {
@@ -352,7 +366,9 @@
 				063FA3442B0E6442003F83B4 /* AddNotificationViewController.swift in Sources */,
 				063FA34C2B0E6682003F83B4 /* AboutUsView.swift in Sources */,
 				068E42FE2B01BF780031ED28 /* CoordinatorProtocol.swift in Sources */,
+				308BDE422B27490900CA3F24 /* NotificationsServiceProtocol.swift in Sources */,
 				067D5C0A2B266E7E005F7F67 /* LoginViewModel.swift in Sources */,
+				308BDE402B2741C700CA3F24 /* NotificationsService.swift in Sources */,
 				068332C62B0979F700E0FFEB /* UIView+Extension.swift in Sources */,
 				063FA34E2B0E669A003F83B4 /* AddNotificationView.swift in Sources */,
 				063FA3362B0E4463003F83B4 /* NotificationsListViewController.swift in Sources */,

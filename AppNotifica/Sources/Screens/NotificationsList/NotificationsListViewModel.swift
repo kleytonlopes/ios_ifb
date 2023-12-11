@@ -12,7 +12,7 @@ struct Notification {
     var subtitle: String
 }
 class NotificationsListViewModel {
-
+    private var notificationService: NotificationsServiceProtocol
     private var currentError: Error? {
         didSet{
             self.errorStateChanged?(currentError?.localizedDescription)
@@ -26,23 +26,16 @@ class NotificationsListViewModel {
         }
     }
     
+    init (service: NotificationsServiceProtocol){
+        self.notificationService = service
+    }
+    
     var errorStateChanged: ((String?) -> Void)?
     var downloadDataSuccess: ((_ notifications: [Notification]) -> Void)?
     func fetchData(){
-        //TODO: Fetch Data Service call
-        self.notifications = [
-            Notification(title: "Título da Ocorrência 1", subtitle: "10/10/2023"),
-            Notification(title: "Título da Ocorrência 2", subtitle: "09/10/2023"),
-            Notification(title: "Título da Ocorrência 3", subtitle: "11/09/2023"),
-            Notification(title: "Título da Ocorrência 4", subtitle: "10/09/2023"),
-            Notification(title: "Título da Ocorrência 5", subtitle: "10/08/2023"),
-            Notification(title: "Título da Ocorrência 6", subtitle: "10/07/2023"),
-            Notification(title: "Título da Ocorrência 7", subtitle: "10/06/2023"),
-            Notification(title: "Título da Ocorrência 8", subtitle: "10/05/2023"),
-            Notification(title: "Título da Ocorrência 9", subtitle: "09/05/2023"),
-            Notification(title: "Título da Ocorrência 10", subtitle: "01/04/2023"),
-
-        ]
+        notificationService.downloadData { array in
+            self.notifications = array
+        }
     }
 
 }

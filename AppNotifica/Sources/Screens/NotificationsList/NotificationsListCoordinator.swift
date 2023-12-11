@@ -11,7 +11,7 @@ class NotificationsListCoordinator : CoordinatorProtocol {
     var navigation: UINavigationController
     
     private lazy var listViewController: NotificationsListViewController = {
-        let viewModel = NotificationsListViewModel()
+        let viewModel = NotificationsListViewModel(service: NotificationsService.shared)
         let viewController = NotificationsListViewController(viewModel: viewModel)
         viewController.tabBarItem.title = "Home"
         viewController.tabBarItem.image = UIImage(named: "home")
